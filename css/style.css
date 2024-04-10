@@ -1,0 +1,406 @@
+/*Esta parte es para que todos los navegadores se les resetee sus diseños 
+por defecto y que no cambie nada o casi nada entre un navegador y otro*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: "League Spartan", sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+    font-family: "League Spartan", sans-serif;
+}
+
+body {
+    line-height: 1;
+    font-family: "League Spartan", sans-serif;
+}
+/*Aqui acaba el codigo para el reseteo*/
+/*El codigo se saco de internet, ya que es un codigo por defecto que toda pagina deberia llevar*/
+
+
+
+
+body {
+    height: 100%;
+}
+
+/*A todos los link le quitamos la linea que se le coloca*/
+a {
+    text-decoration: none;
+}
+
+
+
+/*Este es para colocar un video de fondo*/
+.divfondo {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Aqui los fondos se ocultan, para que solo sean visibles al darle clic a su respectivo boton*/
+.fondoreportelab {
+    display: none;
+}
+.fondoconsulta {
+    display: none;
+}
+.fondocontactanos{
+    position: absolute;
+     display: none; 
+     width: 100%;
+     height: 100%;
+    
+}
+.fondoblog{
+    position: absolute;
+     display: none; 
+     width: 100%;
+     height: 100%;
+}
+
+.fondoservicios {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to top right, rgba(146, 146, 146, .6)0%, rgba(146, 146, 146, .6) 20%, white 20%, white 80%, rgba(146, 146, 146, .6) 80%, rgba(146, 146, 146, .6) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    display: none;
+}
+
+
+.divfondo video {
+    position: absolute;
+    z-index: -5;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+
+    object-fit: cover;
+}
+
+/*Nuesto menu superior, lo hacemos flexible para poder centrar los objetos*/
+header {
+    display: flex;
+    padding: 15px 50px 0px 50px;
+    align-content: center;
+    align-items: center;
+}
+
+/*Ës para los opciones del menu, le calculamos que deje un espacio para que este nuestro logo y no se ponga debajo de el*/
+nav {
+    display: inline-block;
+    width: calc(100vw - 95px);
+}
+
+/*Convertimos el div de logo en un linea*/
+.logo {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+}
+
+/*Convertimos el ul en flex para logar colocar los li hasta el final y centrarlo*/
+ul {
+    display: flex;
+    /*Convierte en elementos flexibles y nos pertime usar unas propiedades de este, ojo si la pantalla es mas pequeña que el contenido se desbordara, para eso le colocamos un elemento*/
+    flex-wrap: wrap;
+    /*Permite que los elementos se envuelvan en multiples lineas si estas lo requieren*/
+    justify-content: end;
+    align-items: center;
+    /*Centrar de forma vertical*/
+}
+
+/*Convertimos lo li (Las opciones del menu) en elementos en linea para que no tengan un salto de linea
+y les damos un padding para que cuando usemos el elemento hover el color se vea ma grande que las palabras*/
+li {
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 100px;
+    margin-left: 5px;
+}
+
+/*Hacemos que las palabra del menu sean blancas y se centren*/
+li a {
+    color: white;
+    /*Color de las palabras*/
+    text-align: center;
+    /*Alinear el texto de forma horizontal*/
+    font-size: 20px;
+    /*Tamaño de la letras*/
+    text-decoration: none;
+    /*Le quitamos la decoracion del a*/
+    padding: 5px 15px;
+    /*Le damos un espacio entre el contenido y el texto*/
+
+}
+
+/*Al pasar el cursos por las opciones se colorean gris */
+li:hover {
+    border-radius: 100px;
+    background-color: rgb(208, 224, 219);
+
+}
+
+/*El boton igual es un elemento li pero tiene otro diseño, aqui le colocamos el diseño que queremos que tenga*/
+.btn {
+    border-radius: 100px;
+    background-color: rgba(225, 235, 231, .5);
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+
+/*El cuadro que esta en el inicio, que cubre un titulo y botones*/
+.principal {
+    position: relative;
+    left: 55px;
+    width: 92vw;
+    height: 80vh;
+    border: 2px solid white;
+}
+
+.principal .letra {
+    position: relative;
+    padding: 80px 20px 50px 20px;
+    width: 55%;
+}
+
+.principal div p {
+    color: white;
+    font-size: 50px;
+
+}
+
+.botones {
+    float: left;
+}
+
+.botones a {
+    margin: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 100px;
+    background-color: rgb(208, 224, 219);
+}
+
+/*Iniciamos con las redes*/
+.redes {
+
+    position: absolute;
+    float: right;
+    bottom: 5px;
+    right: 5px;
+}
+
+.redes img {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+.redes .instagram {
+    width: 50px;
+    height: 50px;
+}
+
+.chat img {
+    width: 60px;
+    height: 60px;
+}
+
+.chat {
+    position: absolute;
+
+    bottom: 5px;
+    left: 10px;
+}
+
+
+
+
+
+.contenido-servicios {
+    position: absolute;
+    display: none;
+    right: 0px;
+    top: 39vh;
+    width: 53vw;
+}
+
+.contenido-servicios .servicio {
+    display: inline-block;
+    position: relative;
+    margin-right: 60px;
+    width: 20vw;
+    height: 30vh;
+    background-color: #D9D9D9;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-servicios .servicio h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    color: #2A3952;
+    display: block;
+    margin: 0px 20px;
+    line-height: 40px;
+    /*Le damos tamaño de la linea que contiene cada palabra*/
+}
+
+.contenido-servicios i {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-size: 50px;
+    color: #595B62;
+    font-weight: 50;
+}
+
+.contenido_bolsadetrabajo{
+    display: none;
+}
+
+.swiper-button-prev {
+    font-size: 300px;
+}
+
+
+
+
+/*En esta parte inicia la parte responsiva, por ahora solo se ha visto el index*/
+@media (max-width:775px) {
+    .principal .letra {
+        width: auto;
+    }
+
+    .principal {
+        height: calc(90vh - 111px);
+        width: calc(90vw - 55px);
+    }
+
+    @media (max-width:555px) {
+        .principal .letra p {
+            font-size: 50px;
+        }
+
+        div video {
+            height: 1080px;
+            height: 100%;
+        }
+    }
+}
+
+.menu-icono{
+    display: none;
+    /* position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 50px; */
+}
+
+@media (max-width:670px) {
+    body {
+        height: auto;
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        display: none;
+        position: static;
+    }
+
+
+    .divfondo video {
+        position: absolute;
+        z-index: -5;
+        top: 0;
+        left: 0;
+        height: auto;
+        width: 100%;
+        overflow: auto;
+    }
+    .menu-icono{
+        display: block;
+    }
+    .menu-icono:hover nav{
+        display: block;
+
+
+    }
+}
+
+.contenido_buscar_empleo{
+    display: none;
+   /*  display: flex; */
+            flex-direction: column;
+            align-items: flex-start; /* Alinear elementos al principio */
+   
+   
+}
+
+.fondobuscartrabajo img {
+  /*   display: none; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Escalar la imagen para cubrir el contenedor */
+}
+
+.contenido_contactanos{
+    display: none;
+    /*  display: flex; */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: relative; /* Establecer la posición relativa para que los elementos hijos se posicionen relativos a este */
+    z-index: 1; /* Asegurar que el contenido esté por encima del fondo */
+
+}
+
+
+.contenido_blog{
+    display: none;
+   
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: relative; /* Establecer la posición relativa para que los elementos hijos se posicionen relativos a este */
+    z-index: 1; /* Asegurar que el contenido esté por encima del fondo */
+
+}
+
+
+/* Hola Diego, salu2s */

@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "League Spartan", sans-serif;/*Cambiar el tipo de letra de todo el documento*/
+    font-weight: 300;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+/*Este es para colocar un video de fondo*/
+div video{
+    position: absolute;
+    z-index: -5;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/*Nuesto menu superior, o hacemos flexible para poder centrar los objetos*/
+header{
+    
+   /* display: flex;  */
+   display: block;
+   padding: 15px 50px 0px 50px;
+   align-content: center;
+   align-items: center;
+}
+
+/*Ës para los opciones del menu, le calculamos que deje un espacio para que este nuestro logo y no se ponga debajo de el*/
+nav{
+    display: inline-block;
+    width: calc(100vw - 95px);
+}
+/*Convertimos el div de logo en un linea*/
+.logo{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+}
+
+/*Convertimos el ul en flex para logar colocar los li hasta el final y centrarlo*/
+ul{
+    display: flex;
+    justify-content: end;
+    align-items: center;/*Centrar de forma vertical*/
+}
+/*Convertimos lo li (Las opciones del menu) en elementos en linea para que no tengan un salto de linea
+y les damos un padding para que cuando usemos el elemento hover el color se vea ma grande que las palabras*/
+li{
+    display: inline-block;
+    padding:10px 15px;  
+    color:white;
+    border-radius: 100px;
+    margin-left: 5px;
+}
+
+/*Hacemos que las palabra del menu sean blancas y se centren*/
+li a{
+    color:white;/*Color de las palabras*/
+    text-align: center;/*Alinear el texto de forma horizontal*/
+    font-size: 20px;/*Tamaño de la letras*/
+    text-decoration: none;/*Le quitamos la decoracion del a*/
+    padding:5px 15px;/*Le damos un espacio entre el contenido y el texto*/
+    
+}
+
+/*Al pasar el cursos por las opciones se colorean gris */
+li:hover {
+    border-radius: 100px;
+    background-color: rgb(208, 224, 219);
+    
+}
+
+/*El boton igual es un elemento li pero tiene otro diseño, aqui le colocamos el diseño que queremos que tenga*/
+.btn{
+    border-radius: 100px;
+    background-color: rgba(225, 235, 231,.5);
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+
+/*El cuadro que esta en el inicio, que cubre un titulo y botones*/
+.principal{
+    position: relative;
+    
+    left: 55px;
+    z-index: -1;
+    width: 92vw;
+    height: 80vh;
+    border: 2px solid white;
+}
+
+.principal .letra{
+    position: relative;
+    padding: 100px 0px 50px 20px;
+    width: 45%;
+}
+.principal div p{
+    color: white;
+    font-size: 50px;
+    
+}
+
+.botones{
+    float: left;
+}
+
+.botones a{
+    margin: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 100px;
+    background-color: rgb(208, 224, 219);
+}
+
+
+@media screen and(max-height:350px) {
+    
+}
+

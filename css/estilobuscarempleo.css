@@ -1,0 +1,112 @@
+.FuncionAplicar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinear elementos al principio */
+    
+}
+.Caja1 {
+    align-self: flex-end; /* Alinear al final del contenedor FuncionAplicar */
+    background-color: #dedfde; /* Fondo gris */
+    padding: 20px; /* Margen alrededor del contenido */
+    margin-top: 10px; /* Margen superior */
+    margin-bottom: 5px; /* Margen inferior */
+    margin-left: auto; /* Margen izquierdo automático para centrar */
+    margin-right: 20px; /* Margen derecho automático para centrar */
+    text-align: justify; /* Alinear el texto justificado */
+    position: absolute; /* Hacer que el boton sea fija */
+    top: 350px; /* Distancia desde la parte superior */
+    
+}
+@media screen and (max-width: 768px) {
+    .Caja1 {
+        position: relative; /* Cambiar a position: relative; en pantallas pequeñas */
+        margin-top: 100px; /* Ajustar el margen superior según sea necesario */
+    }
+}
+
+.fondobuscartrabajo{
+display: none;   
+position: fixed; /* Fijar el fondo en una posición fija */
+top: 0;
+left: 0;
+width: 100%; /* Ajustar el ancho al 100% */
+height: 100%; /* Ajustar la altura al 100% */
+z-index: -1; /* Colocar el fondo detrás de otros elementos */
+
+}
+
+.Caja1 p {
+    color: #000; /* Color oscuro */
+    font-size: 19px; /* Tamaño de fuente un poco más grande */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+    text-align: justify; /* Justificar el texto */
+    
+}
+
+
+.contenido_buscar_empleo h1 {
+    color: #2a3952; /* Color de texto h1 */
+    font-size: 24px; /* Tamaño de fuente */
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 55px;
+}
+.contenido_buscar_empleo h4 {
+    margin-top: 15px; /* Espacio superior */
+    padding-left: 55px;
+    color: #2a3952; /* Color de texto h4 */
+    font-weight: bold;
+    font-size: 20px; /* Tamaño de fuente */
+}
+
+
+.contenido_buscar_empleo p{
+    font-size: 19px; /* Tamaño de fuente un poco más grande */
+    max-width: 100%; /* Establecer el ancho máximo al 100% */
+    padding-left: 40px;
+    
+}
+.buscarempleo-boton{
+    margin-top: 10px; /* Ajusta este valor según sea necesario para el espacio deseado */
+    margin-left: 300px; /* Ajusta este valor para mover el botón hacia la derecha */
+    border-radius: 100px;
+    background-color: #6e7787;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: flex; /* Hacer que el boton sea fija */
+ 
+
+
+}
+.buscarempleo-boton a {
+    color:#000;
+
+}
+
+
+.texto_principal {
+  
+    margin: 0 auto; /* Centrar el contenido horizontalmente */
+    padding: 0 20px; /* Añadir un poco de espacio a los lados */
+    max-width: 100%; /* Establecer el ancho máximo al 100% */
+}
+
+.texto_principal p {
+    text-align: justify; /* Justificar el texto */
+    max-width: 100%; /* Establecer el ancho máximo al 100% */
+}
+
+.contenido_buscar_empleo{
+    margin-top: 30px; /* Ajusta este valor según sea necesario para el espacio deseado */
+}
+.imagenaplicar img{
+   
+        width: 270px; /* Ajusta el ancho de la imagen según sea necesario */
+        height: auto; /* Mantener la relación de aspecto */
+        margin-top: 100px; /* Ajusta este valor para el espacio deseado desde arriba */
+        margin-bottom: 20px; /* Ajusta este valor para el espacio deseado desde abajo */
+        margin-left: 250px; /* Ajusta este valor para mover el botón hacia la derecha */
+      /*  background-color: #d7dadc; */
+       
+
+}
