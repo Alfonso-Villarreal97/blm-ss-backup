@@ -1,0 +1,17 @@
+/* Estilo de la estructura en general del body */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+/* Estilo para los fondos de video */
+  .fondos video {
+    position: absolute;
+    z-index: -5;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    overflow: auto;
+}
