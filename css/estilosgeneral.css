@@ -15,3 +15,31 @@ body, html {
     width: 100%;
     overflow: auto;
 }
+
+ /*  Estilos para la parte de NAV, lista,links y items */
+  
+ .nav-list-otros {
+  list-style: none; /* Elimina los puntos de la lista */
+  display: flex; /* Establece los elementos de la lista como flexibles */
+
+}
+
+.nav-item-otros {
+  margin-right: 30px; /* Espacio entre los elementos de la lista */
+}
+
+.nav-link-otros {
+  text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+  font-size: 20px; /* Ajusta el tamaño del texto */
+  color: black; /* Color del texto */
+}
+
+.header-otros {
+  display: flex;
+  align-items: center; /* Alinea verticalmente */
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.logo_principal-otros {
+  margin-right: 500px; /* Espacio entre el logo y los elementos de navegación */
+}
