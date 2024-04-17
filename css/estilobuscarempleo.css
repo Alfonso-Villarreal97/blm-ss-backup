@@ -1,31 +1,49 @@
-.FuncionAplicar {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Alinear elementos al principio */
-    
+/* Muestra en que pagina esta */
+.semicirculo_contactanos {
+    background-color: #c2bdb4;
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 50px; /* Forma de óvalo */
+    transform: translateY(-50%);
 }
-.Caja1 {
-    align-self: flex-end; /* Alinear al final del contenedor FuncionAplicar */
-    background-color: #dedfde; /* Fondo gris */
-    padding: 20px; /* Margen alrededor del contenido */
-    margin-top: 10px; /* Margen superior */
-    margin-bottom: 5px; /* Margen inferior */
-    margin-left: auto; /* Margen izquierdo automático para centrar */
-    margin-right: 20px; /* Margen derecho automático para centrar */
-    text-align: justify; /* Alinear el texto justificado */
-    position: absolute; /* Hacer que el boton sea fija */
-    top: 350px; /* Distancia desde la parte superior */
-    
-}
-@media screen and (max-width: 768px) {
-    .Caja1 {
-        position: relative; /* Cambiar a position: relative; en pantallas pequeñas */
-        margin-top: 100px; /* Ajustar el margen superior según sea necesario */
-    }
+/* Estilo titulos */
+.titulos h1{
+    font-size: 40px;
+    color: #2a3952; 
+    font-weight: bold; /* Hace que el texto esté en negrita */
+    margin-left: 55px;
 }
 
-.fondobuscartrabajo{
-display: none;   
+.titulos h2{
+    font-size: 20px;
+    color: #2a3952; 
+    font-weight: bold; /* Hace que el texto esté en negrita */
+    margin-left: 55px;
+}
+/* Estilo texto principal y caja */
+.texto_principal {
+    margin-left: 55px;
+    padding: auto;
+ 
+}
+
+.Caja1 {
+    
+    background-color: #dedfde; /* Fondo gris */
+    margin-top: -270px; /* Margen inferior */    
+    position: flex; /* Hacer que el boton sea fija */
+    margin-left:800px;
+    margin-right: 100px;
+}
+.Caja1 p {
+    color: #000; /* Color oscuro */
+    font-size: 19px; /* Tamaño de fuente un poco más grande */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+    text-align: justify; /* Justificar el texto */
+    
+}
+
+/* Estilo para el fondo */
+.fondobuscartrabajo{ 
 position: fixed; /* Fijar el fondo en una posición fija */
 top: 0;
 left: 0;
@@ -35,75 +53,29 @@ z-index: -1; /* Colocar el fondo detrás de otros elementos */
 
 }
 
-.Caja1 p {
-    color: #000; /* Color oscuro */
-    font-size: 19px; /* Tamaño de fuente un poco más grande */
-    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
-    text-align: justify; /* Justificar el texto */
-    
-}
-
-
-.contenido_buscar_empleo h1 {
-    color: #2a3952; /* Color de texto h1 */
-    font-size: 24px; /* Tamaño de fuente */
-    font-size: 40px;
-    font-weight: bold;
-    padding-left: 55px;
-}
-.contenido_buscar_empleo h4 {
-    margin-top: 15px; /* Espacio superior */
-    padding-left: 55px;
-    color: #2a3952; /* Color de texto h4 */
-    font-weight: bold;
-    font-size: 20px; /* Tamaño de fuente */
-}
-
-
-.contenido_buscar_empleo p{
-    font-size: 19px; /* Tamaño de fuente un poco más grande */
-    max-width: 100%; /* Establecer el ancho máximo al 100% */
-    padding-left: 40px;
-    
-}
-.buscarempleo-boton{
-    margin-top: 10px; /* Ajusta este valor según sea necesario para el espacio deseado */
-    margin-left: 300px; /* Ajusta este valor para mover el botón hacia la derecha */
-    border-radius: 100px;
-    background-color: #6e7787;
-    padding: 10px 20px;
-    font-size: 20px;
-    position: flex; /* Hacer que el boton sea fija */
- 
-
-
-}
+/* Estilo boton aplicar ahora */
 .buscarempleo-boton a {
-    color:#000;
-
+    border: 2px solid #000; /* Color del borde y grosor */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: #000; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+    display: inline-block; /* Permite aplicar dimensiones y alineación */
+    border-radius: 20px; /* Radio de 20px para esquinas redondeadas */
+    margin-left: 300px;
+    background-color: #6e7788;
 }
 
-
-.texto_principal {
-  
-    margin: 0 auto; /* Centrar el contenido horizontalmente */
-    padding: 0 20px; /* Añadir un poco de espacio a los lados */
-    max-width: 100%; /* Establecer el ancho máximo al 100% */
+.buscarempleo-boton a:hover {
+    background-color: #000; /* Cambia el color de fondo al pasar el mouse */
+    color: #fff; /* Cambia el color del texto al pasar el mouse */
 }
-
-.texto_principal p {
-    text-align: justify; /* Justificar el texto */
-    max-width: 100%; /* Establecer el ancho máximo al 100% */
-}
-
-.contenido_buscar_empleo{
-    margin-top: 30px; /* Ajusta este valor según sea necesario para el espacio deseado */
-}
+/* Imagen de solicitud de empleo */
 .imagenaplicar img{
    
         width: 270px; /* Ajusta el ancho de la imagen según sea necesario */
         height: auto; /* Mantener la relación de aspecto */
-        margin-top: 100px; /* Ajusta este valor para el espacio deseado desde arriba */
+        margin-top: 80px; /* Ajusta este valor para el espacio deseado desde arriba */
         margin-bottom: 20px; /* Ajusta este valor para el espacio deseado desde abajo */
         margin-left: 250px; /* Ajusta este valor para mover el botón hacia la derecha */
       /*  background-color: #d7dadc; */
