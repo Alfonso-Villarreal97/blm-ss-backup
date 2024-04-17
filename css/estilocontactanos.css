@@ -1,10 +1,11 @@
-    
+/* Este estilo es para marcar en que pagina se encuentra el usuario */    
 .semicirculo_contactanos {
         background-color: #c2bdb4;
         padding: 5px 10px; /* Espaciado interno */
         border-radius: 50px; /* Forma de óvalo */
         transform: translateY(-50%);
 }
+/* Estilo del h1 */
 .titulo_contactanos {
     font-size: 35px; /* Tamaño de fuente para el texto "CONTÁCTANOS" */
     color: #2a3952; /* Color de texto */
@@ -13,6 +14,7 @@
     font-weight: bold; /* Hacer que el texto del botón esté en negrita */
 
 }
+/* icono de telefono */
 .icono_telefono_contactanos {
     font-size: 35px; /* Tamaño de fuente para el texto "CONTÁCTANOS" */
     color: #2a3952; /* Color de texto */
@@ -24,7 +26,7 @@
     margin-top: -100px;
 }
 
-
+/* Textos del contenido o main */
 .texto_principal{
 font-size: 20px;
 margin-top: -20px;
@@ -38,7 +40,7 @@ margin-left: 55px;
     margin-left: 55px;
 }
 
-
+/* Estilos para los icones y contenido de las redes sociales */
 .redes_contactanos {
     display: flex; /* Usar flexbox */
     flex-direction: column; /* Cambiar la dirección del eje principal a vertical */
@@ -70,6 +72,7 @@ margin-left: 55px;
     color: #2a3952; /* Color del ícono */
 }
 
+/* Estilo para el fondo */
 .fondocontactanos {
     position: fixed; /* Fijar el fondo en una posición fija */
     top: 0;
@@ -87,6 +90,8 @@ margin-left: 55px;
     height: 100%; /* Ajustar la imagen a la altura del contenedor */
    
 }
+
+/* Estilo para tabla que el usuario llena */
 
 .tabla_contacto {
     width: 40%; /* Ancho de la tabla */
@@ -130,22 +135,4 @@ margin-left: 55px;
     border: 2px solid #2a3952; /* Cambiar el color del contorno del input */
 }
 
-.Texto_contactanos i {
-    margin-right: 250px; /* Ajustar el espacio entre el icono y el número */
-    display: flex; /* Utilizar flexbox */
-    flex-direction: row; /* Cambiar la dirección del eje principal a horizontal */
-    align-items: center; /* Alinear verticalmente los elementos al centro */
-}
 
-.tex_contactanos p{
-    margin-left: 55px; /* Ajusta el valor según la cantidad de píxeles que desees mover el texto hacia la derecha */
-    font-size: 20px;
-    
-}
-
-.tex_contactanos .abajo{
-    font-weight: bold; /* Hacer que el texto del botón esté en negrita */
-    font-size: 30px;
-    margin-left: 55px; /* Ajusta el valor según la cantidad de píxeles que desees mover el texto hacia la derecha */
-    color: #2a3952; /* Color de texto */
-}
