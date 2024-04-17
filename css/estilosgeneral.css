@@ -1,27 +1,28 @@
 /* Estilo de la estructura en general del body */
-body, html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-/* Estilo para los fondos de video */
-  .fondos video {
-    position: absolute;
-    z-index: -5;
-    top: 0;
-    left: 0;
-    height: auto;
-    width: 100%;
-    overflow: auto;
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
+
+/* Estilo para los fondos de video */
+    .fondos video {
+      position: absolute;
+      z-index: -5;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
 
  /*  Estilos para la parte de NAV, lista,links y items */
   
  .nav-list-otros {
   list-style: none; /* Elimina los puntos de la lista */
   display: flex; /* Establece los elementos de la lista como flexibles */
-
 }
 
 .nav-item-otros {

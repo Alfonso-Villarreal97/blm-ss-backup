@@ -1,19 +1,48 @@
- /*  Estilos para la parte de NAV, lista,links y items */
-  
-  .nav-list {
-    list-style: none; /* Elimina los puntos de la lista */
+/** Globales **/
+:root{
+    /*Defino colores a utilizar en el proyecto*/
+    --selectedItemInicio: #fff;
+    --selectedItemRest: #F3EDE4;
+    --selectedItemAnchor: #000;
+    --selectedUneteInicio: rgba(255,255,255,.4);
+    --selectedUneteRest: rgba(42, 57, 82, .4);
+}
+
+ * {
+    font-family: "League Spartan", sans-serif;
+}
+
+/*  Estilos para la parte de NAV, lista,links y items */
+.navegacion {
     display: flex; /* Establece los elementos de la lista como flexibles */
-
+    flex-flow: nowrap;
+    padding: 1rem 0rem;   
+    position: fixed; 
+    right: 100px
 }
 
-.nav-item {
-    margin-right: 30px; /* Espacio entre los elementos de la lista */
+.navegacion ul li{
+    margin-left: 3px; 
+    display: inline-block;
+    text-wrap: nowrap;
+    list-style: none; /* Elimina los puntos de la lista */
 }
 
-.nav-link {
-    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+.nav-enlace {
+    text-decoration: none;
     font-size: 20px; /* Ajusta el tamaño del texto */
     color: white; /* Color del texto */
+    padding: 5px 15px;
+}
+
+/*Puntero por Mano al pasar sobre un elemento*/
+.nav-enlace:hover {
+    cursor: pointer;
+    background-color: var(--selectedItemInicio);
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: var(--selectedItemAnchor);
+    transition: 0.2s ease-out;
 }
 
 .header {
@@ -22,18 +51,22 @@
     margin-top: 20px;
     margin-left: 50px;
 }
+
 .logo_principal {
     margin-right: 500px; /* Espacio entre el logo y los elementos de navegación */
 }
-/* Estilo para boton  inicio */
-.semicirculo {
-    background-color: #c2bdb4;
-    padding: 5px 10px; /* Espaciado interno */
-    border-radius: 50px; /* Forma de óvalo */
-    transform: translateY(-50%);
-}
 
-/* Estilo pata la p, texto, del inicio */
+/** Estilo para boton inicio **/
+/* .semicirculo {
+    background-color: #c2bdb4;
+    padding: 5px 10px; 
+    border-radius: 50px; 
+    transform: translateY(-50%);
+} */
+
+
+
+/* Estilo para la p, texto, del inicio */
 .texto_inicio{
     color: white;
     position: relative;
@@ -69,7 +102,7 @@
     position: fixed; /* Establecer posición fija */
     bottom: 100px; /* Espacio desde la parte inferior */
     right: 100px; /* Espacio desde la parte derecha */
-   /*  background-color: black; */
+
 }
 
 .redes_inicio i {
@@ -85,7 +118,6 @@
         position: relative;
         left: 55px;
         width: 92vw;
-        height: 80vh;
-        border: 2px solid white;
-    
+        height: 75vh;
+        border: 2px solid white;    
 }
