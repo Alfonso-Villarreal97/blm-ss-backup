@@ -35,6 +35,16 @@
     padding: 5px 15px;
 }
 
+.nav-enlace--activo{
+    text-decoration: none;
+    font-size: 20px; /* Ajusta el tamaño del texto */
+    color: white; /* Color del texto */
+    padding: 10px 20px;
+    background-color: var(--selectedUneteInicio);
+    border-radius: 15px;
+
+}
+
 /*Puntero por Mano al pasar sobre un elemento*/
 .nav-enlace:hover {
     cursor: pointer;
@@ -56,41 +66,51 @@
     margin-right: 500px; /* Espacio entre el logo y los elementos de navegación */
 }
 
-/** Estilo para boton inicio **/
-/* .semicirculo {
-    background-color: #c2bdb4;
-    padding: 5px 10px; 
-    border-radius: 50px; 
-    transform: translateY(-50%);
-} */
-
-
-
 /* Estilo para la p, texto, del inicio */
 .texto_inicio{
     color: white;
     position: relative;
-    padding: 55px 0px 50px 70px;
+    padding: 50px 0px 20px 70px;
     width: 45%;
-    font-size: 30px;
+    font-size: 45px;
 }
 
 /* Estilo para los botones de acceso a socio y buscar empleo */
-.botones_inicio a{
-    margin: 80px;
-    color: rgb(0, 0, 0);
+.botones_inicio .acceso_socios{
+    margin: 20px 80px;
+    color: var(--selectedItemAnchor);
     font-size: 20px;
     padding: 10px;
-    border-radius: 100px;
-    background-color: #c2bdb4;
+    border-radius: 15px;
+    background-color: var(--selectedItemInicio);
     text-decoration: none; /* Quita el subrayado del texto */
     margin-right: 5px;
 }
 
+.botones_inicio .buscar_empleo_boton{
+    margin: 80px;
+    color: var(--selectedItemInicio);
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: var(--selectedUneteInicio);
+    text-decoration: none; /* Quita el subrayado del texto */
+    margin-right: 5px;
+}
+
+.icono_chat{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+}
+
 .icono_chat i{
-    font-size: 40px; /* Cambiar el tamaño del icono a 24px */
-    margin-top: 90px;
-    margin-left: 70px;
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
     color:white;
 }
 
@@ -99,17 +119,16 @@
     flex-direction: column; /* Cambiar la dirección del eje principal a vertical */
     justify-content: center; /* Centrar horizontalmente los elementos */
     align-items: center; /* Centrar verticalmente los elementos */
-    position: fixed; /* Establecer posición fija */
-    bottom: 100px; /* Espacio desde la parte inferior */
-    right: 100px; /* Espacio desde la parte derecha */
-
+    position: absolute; /* Establecer posición fija */
+    bottom: 10px; 
+    right: 10px;
 }
 
 .redes_inicio i {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px; /* Ajustar el espacio entre el icono y el número */
-    margin-bottom: -50px; /* Espacio vertical entre los iconos */
+    width: 50px;
+    height: 50px;
+    justify-content: left;
+    margin-bottom: 5px; /* Espacio vertical entre los iconos */
     font-size: 35px; /* Tamaño de los iconos */
     color: white; /* Cambiar el color de los iconos a azul */
 }
