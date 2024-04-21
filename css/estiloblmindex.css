@@ -38,13 +38,21 @@
     padding: 5px 15px;
 }
 
-.nav-enlace--activo{
+.nav-enlace--activo-unete{
     text-decoration: none;
     font-size: 20px; /* Ajusta el tamaño del texto */
     color: white; /* Color del texto */
     padding: 10px 20px;
     background-color: var(--selectedUneteInicio);
     border-radius: 15px;
+}
+
+.nav-enlace--activo-unete:hover{
+    background-color: var(--selectedItemInicio);
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: var(--selectedItemAnchor);
+    transition: 0.2s ease-out;
 }
 
 .nav-enlace--selected{
@@ -127,7 +135,7 @@
     margin: 20px 80px;
     color: var(--selectedItemAnchor);
     font-size: 20px;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 15px;
     background-color: var(--selectedItemInicio);
     text-decoration: none; /* Quita el subrayado del texto */
@@ -143,6 +151,22 @@
     background-color: var(--selectedUneteInicio);
     text-decoration: none; /* Quita el subrayado del texto */
     margin-right: 5px;
+}
+
+.botones_inicio .acceso_socios:hover{    
+    background-color: var(--selectedItemAnchor);
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: var(--selectedItemInicio);
+    transition: 0.2s ease-out;
+}
+
+.botones_inicio .buscar_empleo_boton:hover{
+    background-color: var(--selectedItemInicio);
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: var(--selectedItemAnchor);
+    transition: 0.2s ease-out;
 }
 
 .icono_chat{
