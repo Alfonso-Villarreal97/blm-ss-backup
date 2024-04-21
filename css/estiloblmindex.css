@@ -4,8 +4,10 @@
     --selectedItemInicio: #fff;
     --selectedItemRest: #F3EDE4;
     --selectedItemAnchor: #000;
-    --selectedUneteInicio: rgba(255,255,255,.4);
-    --selectedUneteRest: rgba(42, 57, 82, .4);
+    --selectedUneteInicio: rgba(255,255,255,.2);
+    --selectedLinkInicio: rgba(255,255,255,.4);
+    --selectedUneteRest: rgba(42, 57, 82, .2);
+    --selectedLinkRest: rgba(42, 57, 82, .4);
 }
 
  * {
@@ -28,6 +30,7 @@
     list-style: none; /* Elimina los puntos de la lista */
 }
 
+/* Estilos para inicio dentro del NavBar */
 .nav-enlace {
     text-decoration: none;
     font-size: 20px; /* Ajusta el tamaño del texto */
@@ -35,23 +38,75 @@
     padding: 5px 15px;
 }
 
-.nav-enlace--activo{
+.nav-enlace--activo-unete{
     text-decoration: none;
     font-size: 20px; /* Ajusta el tamaño del texto */
     color: white; /* Color del texto */
     padding: 10px 20px;
     background-color: var(--selectedUneteInicio);
     border-radius: 15px;
-
 }
 
-/*Puntero por Mano al pasar sobre un elemento*/
+.nav-enlace--activo-unete:hover{
+    background-color: var(--selectedItemInicio);
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: var(--selectedItemAnchor);
+    transition: 0.2s ease-out;
+}
+
+.nav-enlace--selected{
+    text-decoration: none;
+    font-size: 20px; /* Ajusta el tamaño del texto */
+    color: white; /* Color del texto */
+    padding: 10px 15px;
+    background-color: var(--selectedLinkInicio);
+    border-radius: 15px;
+}
+
+/* Estilos para el resto de opciones dentro del NavBar*/
+
+.nav-enlace--lightside {
+    text-decoration: none;
+    font-size: 20px; /* Ajusta el tamaño del texto */
+    color: var(--selectedItemAnchor); /* Color del texto */
+    padding: 10px 15px;
+}
+
+.nav-enlace--selectedLight{
+    text-decoration: none;
+    font-size: 20px; /* Ajusta el tamaño del texto */
+    color: var(--selectedItemAnchor); /* Color del texto */
+    padding: 10px 15px;
+    background-color: var(--selectedLinkRest);
+    border-radius: 15px;
+}
+
+.nav-enlace--activolight{
+    text-decoration: none;
+    font-size: 20px; /* Ajusta el tamaño del texto */
+    color: white; /* Color del texto */
+    padding: 10px 20px;
+    background-color: var(--selectedUneteRest);
+    border-radius: 15px;
+}
+
+/*Efectos Hover para el NavBarCambio puntero a mano al pasar sobre un elemento*/
 .nav-enlace:hover {
     cursor: pointer;
     background-color: var(--selectedItemInicio);
     padding: 10px 15px;
     border-radius: 15px;
     color: var(--selectedItemAnchor);
+    transition: 0.2s ease-out;
+}
+
+.nav-enlace--lightside:hover {
+    cursor: pointer;
+    background-color: var(--selectedItemAnchor);
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: var(--selectedItemInicio);
     transition: 0.2s ease-out;
 }
 
@@ -80,7 +135,7 @@
     margin: 20px 80px;
     color: var(--selectedItemAnchor);
     font-size: 20px;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 15px;
     background-color: var(--selectedItemInicio);
     text-decoration: none; /* Quita el subrayado del texto */
@@ -96,6 +151,22 @@
     background-color: var(--selectedUneteInicio);
     text-decoration: none; /* Quita el subrayado del texto */
     margin-right: 5px;
+}
+
+.botones_inicio .acceso_socios:hover{    
+    background-color: var(--selectedItemAnchor);
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: var(--selectedItemInicio);
+    transition: 0.2s ease-out;
+}
+
+.botones_inicio .buscar_empleo_boton:hover{
+    background-color: var(--selectedItemInicio);
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: var(--selectedItemAnchor);
+    transition: 0.2s ease-out;
 }
 
 .icono_chat{
