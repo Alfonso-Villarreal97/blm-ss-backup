@@ -1,68 +1,38 @@
-.contenido_seguimiento {
-    display: none; 
-    margin-top: 50px;
-    margin-left: 50px;
-    overflow: hidden;
-   
+.fondoseguimiento video {
+    position: absolute; /* Establece la posición del elemento de video de forma absoluta con respecto a su contenedor primario */
+    top: 0; /* Coloca el video en la parte superior del contenedor primario */
+    left: 0; /* Coloca el video en el lado izquierdo del contenedor primario */
+    width: 100%; /* Hace que el video ocupe el 100% del ancho de su contenedor primario */
+    height: 100%; /* Hace que el video ocupe el 100% del alto de su contenedor primario */
+    z-index: -1; /* Establece la "profundidad" del video, colocándolo detrás de otros elementos en la página */
+    object-fit: cover; /* Ajusta el tamaño del video para cubrir completamente el contenedor sin distorsionar su relación de aspecto */
 }
 
-.fondoseguimiento{
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw; /* Ancho de la ventana del navegador */
-    height: 100vh; /* Alto de la ventana del navegador */
-    z-index: -1;
-    overflow: hidden; /* Para asegurarse de que la imagen no se desborde */
-}
-.titulos_seguimientos h1{
-    color:white;
-    text-align: right;
-    margin-right: 160px;
-    font-size: 50px;
-    
+h1 {
+    color: white; /* Establece el color del texto del h1 en blanco */
+    text-align: right; /* Alinea el texto del h1 hacia la derecha dentro de su contenedor */
+    margin-top: 50px; /* Establece un espacio en la parte superior del h1 de 50 píxeles */
+    margin-right: 160px; /* Establece un espacio en el lado derecho del h1 de 160 píxeles */
+    font-size: 50px; /* Establece el tamaño del texto del h1 en 50 píxeles */
 }
 
-.titulos_seguimientos h2{
-    color:white;
-    text-align: right;
-    margin-right: 160px;
-    font-size: 20px;
-    margin-top: 10px;
-    
-}
-.texto_seguimiento{
-    color:white;
-    text-align: right;
-    margin-right: 160px;
-    font-size: 18px;
-    margin-top: 35px;
+h2 {
+    color: white; /* Establece el color del texto del h2 en blanco */
+    text-align: right; /* Alinea el texto del h2 hacia la derecha dentro de su contenedor */
+    margin-right: 160px; /* Establece un espacio en el lado derecho del h2 de 160 píxeles */
+    font-size: 20px; /* Establece el tamaño del texto del h2 en 20 píxeles */
+    margin-top: 5px; /* Establece un espacio en la parte superior del h2 de 5 píxeles */
 }
 
-.avisos_seguimiento{
-    color:white;
-    text-align: right;
-    margin-right: 5px;
-    font-size: 20px;
-    margin-top: 15px;  
-    margin-top: 70px;
-}
-.avisos_seguimiento a {
-    text-align: right;
-    margin-right: 20px; /* Reducir el espacio entre los enlaces */
-    align-items: center; /* Alinea los elementos verticalmente */
-    font-size: 15px;
+p {
+    color: white; /* Establece el color del texto de los párrafos en blanco */
+    text-align: right; /* Alinea el texto de los párrafos hacia la derecha dentro de su contenedor */
+    margin-right: 160px; /* Establece un espacio en el lado derecho de los párrafos de 160 píxeles */
+    font-size: 18px; /* Establece el tamaño del texto de los párrafos en 18 píxeles */
+    margin-top: 5px; /* Establece un espacio en la parte superior de los párrafos de 5 píxeles */
 }
 
 
-.avisos_seguimiento p {
-    margin-right: 10px; /* Añade un margen a la derecha para separar el texto del enlace */
-    text-align: right;
-    margin-right: 160px;
-    margin-top: 10px;
-    font-size: 15px;
-}
-.correoaviso{
-    margin-right: 140px;
+*{
+    font-family: "League Spartan", sans-serif; /* Aplica la fuente League Spartan a todos los elementos */
 }
