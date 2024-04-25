@@ -1,0 +1,55 @@
+
+*{
+    font-family: "League Spartan", sans-serif; /* Aplica la fuente League Spartan a todos los elementos */
+}
+
+body {
+    overflow-y: scroll; /* Habilita el scroll vertical */    
+  }
+  
+  .container::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    display: none;  /* Ocultar scroll */
+}
+.titulo_aviso_privacidad{
+    background-color: #221d74; /* Color de fondo del título */
+    color: white; /* Color del texto */
+    width: 100%; /* Ancho del div al 100% del contenedor padre */
+    height: 75px; /* Altura del div */
+    display: flex; /* Para usar flexbox */
+    align-items: center; /* Para centrar verticalmente el contenido */
+    display: flex; /* Establece el display en flex */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    font-size: 25px; /* Tamaño de fuente */
+    text-align: justify; /* Alinea el texto justificado */
+}
+
+h2{
+    margin: 30px 30px; /* Márgenes */
+}
+p{
+    margin: 30px 30px; /* Márgenes */
+    padding: 5px; /* Relleno */
+    font-size: 20px; /* Tamaño de fuente */
+}
+
+.final{
+    align-items: center; /* Para centrar verticalmente el contenido */
+    display: flex; /* Establece el display en flex */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ejercerderechos{
+    margin-left: 580px;  /* Espacio a la izqueirda para centrar */
+    margin-bottom: 30px; /* Espacio entre el botón y el final de la página */
+    align-self: flex-end; /* Alineación del botón en la parte inferior del contenedor */
+    background-color: #ba0e16;
+    color: white;
+    padding: 15px; /* Relleno */
+    border:none;
+}
+
