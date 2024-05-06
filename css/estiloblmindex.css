@@ -7,6 +7,7 @@
     --selectedUneteInicio: rgba(255,255,255,.2);
     --selectedLinkInicio: rgba(255,255,255,.4);
     --selectedUneteRest: rgba(42, 57, 82, .2);
+    --blue: rgba(42, 57, 82);
     --selectedLinkRest: rgba(42, 57, 82, .4);
 }
 
@@ -103,7 +104,7 @@
 
 .nav-enlace--lightside:hover {
     cursor: pointer;
-    background-color: var(--selectedItemAnchor);
+    background-color: var(--blue);
     padding: 10px 15px;
     border-radius: 15px;
     color: var(--selectedItemInicio);
@@ -125,14 +126,15 @@
 .texto_inicio{
     color: white;
     position: relative;
-    padding: 50px 0px 20px 70px;
+    padding: 0px 70px;
     width: 45%;
-    font-size: 45px;
+    font-size: 50px;
+    margin-bottom: 100px;
 }
 
 /* Estilo para los botones de acceso a socio y buscar empleo */
 .botones_inicio .acceso_socios{
-    margin: 20px 80px;
+    margin: 5px 80px;
     color: var(--selectedItemAnchor);
     font-size: 20px;
     padding: 10px 15px;
