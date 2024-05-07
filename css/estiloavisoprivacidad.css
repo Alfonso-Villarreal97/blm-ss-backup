@@ -12,6 +12,7 @@ body {
     height: 8px;    /* Tamaño del scroll en horizontal */
     display: none;  /* Ocultar scroll */
 }
+
 .titulo_aviso_privacidad{
     background-color: #221d74; /* Color de fondo del título */
     color: white; /* Color del texto */
