@@ -37,8 +37,7 @@ html {
 }
 
 /*Estilos Carousel*/
-.contenedor2 {
-    min-height: 80vh;
+.contenedor2 {    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,8 +47,10 @@ html {
 .slider{
     position: relative;
     width: 100%;
-    height: 425px;
+    height: 130px;
     overflow: hidden;
+    box-sizing: border-box;
+    top: 65px;
 }
 
 .item{
@@ -62,6 +63,19 @@ html {
     transition: 0.5s;
     right: 300px; 
     text-align: center;   
+}
+
+.item.active {
+    opacity: 1;
+    animation: slide 8s infinite;
+}
+
+@keyframes slide {
+    0% { transform: translateX(100%); }
+    25% { transform: translateX(0); }
+    50% { transform: translateX(0); }
+    75% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
 }
 
 .icon-go {
@@ -91,5 +105,9 @@ html {
 #next{
     left: unset;
     right: 80px;
+}
+
+#next, #prev:hover{
+    cursor: pointer;
 }
 

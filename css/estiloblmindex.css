@@ -20,7 +20,7 @@
     display: flex; /* Establece los elementos de la lista como flexibles */
     flex-flow: nowrap;
     padding: 1rem 0rem;   
-    position: fixed; 
+    position: static; 
     right: 100px
 }
 
