@@ -1,9 +1,18 @@
-/* Este estilo es para marcar en que pagina se encuentra el usuario */    
-.semicirculo_contactanos {
-    background-color: #c2bdb4;
-    padding: 5px 10px; /* Espaciado interno */
-    border-radius: 50px; /* Forma de óvalo */
-    transform: translateY(-50%);
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif; /* Aplica la fuente League Spartan a todos los elementos */
+}
+body{
+    overflow-y: scroll !important; /* Habilita el scroll vertical */ 
+}
+
+.container::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    display: none;  /* Ocultar scroll */
 }
 
 /* Estilo para el fondo */
@@ -23,6 +32,7 @@
     color: #2a3952; 
     font-weight: bold; /* Hace que el texto esté en negrita */
     margin-left: 55px;
+    margin-top: 15px;
 }
 
 .all_psot, .dudas {
@@ -30,7 +40,7 @@
     margin-left: 55px; /* Espacio entre los elementos */
     margin-right: 20px; /* Espacio entre las opciones */
     font-size: 25px;
-    margin-top: 20px;
+    margin-top: 30px;
     font-weight: bold;
     text-decoration: none; /* Elimina el subrayado de todos los enlaces dentro de .opciones */
     color: #2a3952;
@@ -44,14 +54,14 @@
 .search-bar {
     margin-left: 1000px; /* Colocar la barra de búsqueda a la derecha */
     position: relative; /* Para posicionar el icono dentro del input */
-    margin-top: -70px;
+    margin-top: -45px;
     
 }
 
 .search-bar input[type="text"] {
     width: 200px; /* Ancho del campo de búsqueda */
     height: 30px; /* Altura del campo de búsqueda */
-    padding-right: 50px; /* Espacio para el botón de búsqueda */
+    padding-right: 10px; /* Espacio para el botón de búsqueda */
     font-size: 16px; /* Tamaño de la fuente */
     border-radius: 20px; /* Bordes curvos */
     border: 1px solid #ccc; /* Borde */
@@ -64,7 +74,7 @@
     padding: 5px;
     position: absolute;
     top: 50%;
-    right: 10px;
+    right: 25px;
     transform: translateY(-50%);
     background-color: transparent;
     border: none;
@@ -77,3 +87,93 @@
     color: #555;
     margin-right:125px; /* Espacio entre el icono y el input */
 }
+
+.post-list{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+    margin-top: 50px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width:1000px;
+    margin: auto;
+}
+
+.post-img{
+     width: 100%; 
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+
+.post{
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .1);
+    transition: .2s;
+    /* overflow: hidden; */
+}
+.post:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .15);
+}
+
+.post-header{
+    width: 100%;
+    height: 200px;
+    /* overflow: hidden; */
+cursor: pointer;
+}
+.post:hover .post-img-1,
+.post:hover .post-img-2,
+.post:hover .post-img-3,
+.post:hover .post-img-4,
+.post:hover .post-img-5{
+    transform: scale(1.1);
+}
+
+.post-body{
+    padding: 15px;
+    text-align: center;
+}
+
+.post-body span{
+    display: inline-block;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.post-body h2{
+    margin-bottom: 15px;
+}
+
+.post-body p{
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.post-body .post-link{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background: #2b6ebb;
+    color: #fff;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .1);
+    transition: .2s;
+}
+
+.post-body .post-link:hover{
+    background: #3378c7;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .1);
+    transform: translateY(-2px);
+}
+

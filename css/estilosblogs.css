@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif; /* Aplica la fuente League Spartan a todos los elementos */
+}
+body{
+    overflow-y: scroll !important; /* Habilita el scroll vertical */ 
+}
+
+.container::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    display: none;  /* Ocultar scroll */
+}
+
+/* Estilo para el fondo */
+.fondoblog1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Ancho de la ventana del navegador */
+    height: 100vh; /* Alto de la ventana del navegador */
+    z-index: -1;
+ 
+}
+
+.titulo_blog1{
+    text-align: justify;
+    font-size: 50px;
+    color: #2a3952; 
+    font-weight: bold; /* Hace que el texto esté en negrita */
+    margin-top: 80px;
+    margin-left: 350px;
+}
+p{
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 20px;
+
+}
+.texto1{
+    justify-content: center;
+    margin-left:350px;
+    margin-right: 250px;
+}
+.texto2{
+    justify-content: center;
+    margin-left:350px;
+    margin-right: 250px;
+}
+
+.imagengeneral{
+    margin-top: 20px;
+    margin-right:250px;
+    margin-left:350px;
+}
+
+h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #2a3952; 
+    font-weight: bold; /* Hace que el texto esté en negrita */
+}
+
+ol{
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 20px;
+    margin-left:20px;
+}
+
+/* Estilos para los icones y contenido de las redes sociales */
+.redes_blog {
+    display:fixed; /* Usar flexbox */
+    justify-content: center; /* Centrar horizontalmente los elementos */
+    align-items: center; /* Centrar verticalmente los elementos */
+    position: static;
+    margin-left: 450px;
+    margin-right:320px ;
+    margin-bottom: -50px;
+    margin-top: 40px;
+}
+
+.redes_blog i {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px; /* Ajustar el espacio entre el icono y el número */
+    margin-bottom: -50px; /* Espacio vertical entre los iconos */
+    font-size: 35px; /* Tamaño de los iconos */
+    color: black ; /* Cambiar el color de los iconos a azul */
+}
