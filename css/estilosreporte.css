@@ -1,0 +1,59 @@
+* {
+    font-family: "League Spartan", sans-serif;
+}
+
+.fondos--reporte video {
+    position: absolute;
+    z-index: -5;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    background-size: 100px;
+}
+
+.contenidoReporte{
+    color: white;
+    position: absolute;
+    padding: 0px 85px;
+    top: 120px;
+    left:100px;
+}
+
+.contenidoReporte .titulo{
+    font-size: 38.2px;
+}
+
+.contenidoReporte .titulo-pregunta{
+    font-size: 25px;
+    width: 60%;  
+    text-align: center;
+    text-shadow: 1px 1px 3px #c1c4c9;
+}
+
+.contenidoReporte .parrafo1, 
+.contenidoReporte .parrafo2{
+    font-size: 25px;
+    width: 60%;
+    text-align: justify;
+}
+
+.contenidoReporte .boton_reporte{
+    margin: 45px 230px;
+}
+
+.boton_reporte .expon{    
+    color: var(--selectedItemAnchor);
+    font-size: 25px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,.5);
+    text-decoration: none; /* Quita el subrayado del texto */
+}
+
+.boton_reporte .expon:hover{
+    color: #000;
+    background-color: #fff;
+    transition: 0.2s ease-out;
+}
