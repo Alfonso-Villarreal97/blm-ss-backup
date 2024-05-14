@@ -8,6 +8,21 @@ html {
   padding: 0;
   overflow: hidden;
 }
+body{
+    overflow-y: scroll !important; /* Habilita el scroll vertical */ 
+}
+.contenedor2{
+    position: relative;
+}
+.slider{
+    position: relative !important;
+}
+
+.container::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    display: none;  /* Ocultar scroll */
+}
 
 /* Estilo para el fondo */
 

@@ -46,10 +46,10 @@ margin-left: 55px;
     flex-direction: column; /* Cambiar la dirección del eje principal a vertical */
     justify-content: center; /* Centrar horizontalmente los elementos */
     align-items: center; /* Centrar verticalmente los elementos */
-    position: fixed; /* Establecer posición fija */
     bottom: 175px; /* Espacio desde la parte inferior */
     right: 600px; /* Espacio desde la parte derecha */
    /*  background-color: black; */
+   padding: 0px;
 }
 
 .redes_contactanos i {
@@ -95,11 +95,12 @@ margin-left: 55px;
     width: 40%; /* Ancho de la tabla */
     height: 300px; /* Altura de la tabla */
     border: 20px solid #d8d9d8; /* Grosor y color del borde */
-    padding: 10px; /* Espaciado interno de las celdas */
     margin: -50px auto 0 725px; /* Márgenes superior e inferior de 100px, centrado horizontalmente */
     gap:5px;
     background-color: #d8d9d8;
     border-radius: 20px; /* Hacer las esquinas de la tabla redondeadas */
+    margin-top: -200px;
+    margin-bottom: 50px;
 }
 
 .tabla_contacto td.button-container {
@@ -133,4 +134,6 @@ margin-left: 55px;
     border: 2px solid #2a3952; /* Cambiar el color del contorno del input */
 }
 
-
+body{
+    overflow-y: scroll !important; /* Habilita el scroll vertical */ 
+}
