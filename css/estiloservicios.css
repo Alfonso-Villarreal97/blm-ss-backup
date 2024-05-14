@@ -8,6 +8,11 @@
 * {
     font-family: "League Spartan", sans-serif;
 }
+body{
+    overflow-y: scroll !important; /* Habilita el scroll vertical */ 
+}
+
+
 
 body,
 html {
@@ -103,7 +108,9 @@ html {
     font-family: monospace;
     font-weight: bold;
     left: 43.75rem;
+    z-index: 1000;
 }
+
 
 #next{
     left: unset;
