@@ -1,0 +1,193 @@
+* {
+    font-family: "League Spartan", sans-serif;
+}
+
+/* Estilo para el fondo */
+
+.fondo-bolsatr img {
+    position: absolute;
+    z-index: -5;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/*Estilo slider circular o rueda de la fortuna */
+
+/*El contenedor principlar de los circulos*/
+.central{
+    overflow: hidden; /*Con esto, cualquier cosa que se salga del tamaño del div sera ocultado */
+    width: 26vw; /*Use una unidad de viewport width para que ajuste al tamaño de la pantalla*/
+    height: 80vh;/*Lo mismo pero con viewport height*/
+    position: absolute; /*Posicion absoluta para que nada lo pueda mover */
+    right: 0;/*Lo fije en la parte superior derecha*/
+    top:0px;
+    padding-left: 40px; /*Le di un espaciado para que no se viera un circulo central que resaltaba y no deberia de*/
+    padding-top: 10px;   
+  }
+  
+  /*13.66*/
+  .container {
+    position: relative;
+    width: 900px;
+    height: 900px;
+    animation: spin 30s linear infinite;    
+  }
+    
+  .container:hover {
+    /* Otros estilos */
+    animation-play-state: paused; /* Detiene la animación */
+  }
+  
+  .container:hover .circle p {
+    /* Otros estilos */
+    animation-play-state: paused; /* Detiene la animación */
+  }  
+  
+  /*Define el tamaño de los circulos*/
+  .circle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color:#576377;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .circle .texto-circle {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+    animation: rotacionletras 30s linear infinite; /* Usar el nombre correcto del keyframe */
+  }
+  
+  .circle .circle-numero{
+    position: absolute;
+    color: rgb(42, 57, 82);
+    font-size: 9.5rem;
+    text-align: center;
+    animation: rotacionletras 30s linear infinite; /* Usar el nombre correcto del keyframe */
+  }
+  
+  /*Animacion papra que las letras giren con el circulo*/
+  @keyframes rotacionletras { 
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+   
+  
+  /*Animacion para que los circulos giren como carrusel*/
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+  
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Distribución de los círculos */
+  .circle:nth-child(10) {
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .circle:nth-child(9) {
+    top: 13%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .circle:nth-child(8) {
+    top: 35%;
+    left: 91%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .circle:nth-child(7) {
+    top: 60%;
+    left: 91%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .circle:nth-child(6) {
+    top: 85%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .circle:nth-child(5) {
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .circle:nth-child(4) {
+    top: 85%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .circle:nth-child(3) {
+    top: 60%;
+    left: 9%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .circle:nth-child(2) {
+    top: 35%;
+    left: 9%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .circle:nth-child(1) {
+    top: 13%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .circle:nth-child(11) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .contenido-bolsadetrabajo{
+    position: absolute;
+    width: 100vw;
+  }
+  
+  /*hacerlo responsivo*/
+  @media (max-width:1055px){
+    .central{
+      height:calc(100vh - 145px) ;
+      padding-top: 0px;
+    }
+    .circle p{
+      font-size: 15px;
+    }
+  
+    .circle{
+      width: 100px;
+      height: 100px;
+    }
+  
+    .container{
+      width: 700px;
+      height: 700px;
+    }
+  }
+  
+
