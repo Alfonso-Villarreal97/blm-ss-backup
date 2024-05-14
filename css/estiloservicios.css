@@ -33,36 +33,39 @@ html {
     font-size: 4rem;
     color: var(--blueText);
     position: relative;
-    left: 30px;
+    left: 1.875rem;
 }
 
 /*Estilos Carousel*/
-.contenedor2 {    
+.contenido { 
+    position: relative;   
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 50px;
+    width: 100vw;
+    height: 100vh;
 }
 
 .slider{
-    position: relative;
-    width: 100%;
-    height: 130px;
+    position: absolute;
+    width: 100vw;
+    height: 23%;
     overflow: hidden;
     box-sizing: border-box;
-    top: 65px;
+    bottom: 31rem;
+    right: 6rem;
 }
 
 .item{
     position: absolute;
-    width: 230px;
-    height: 90px;
+    width: 14.375rem;
+    height: 5.625rem;
     background-color: #DFDFDF;
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 0.625rem;
+    padding: 1.25rem;
     transition: 0.5s;
-    right: 300px; 
-    text-align: center;   
+    right: 18.75rem; 
+    text-align: center;
 }
 
 .item.active {
@@ -80,9 +83,9 @@ html {
 
 .icon-go {
     position: absolute;
-    right: 30px;
-    bottom: 10px;
-    font-size: 24px;
+    right: 1.875rem;
+    bottom: 0.625rem;
+    font-size: 1.5rem;
     color: #595B62;
 }
 
@@ -92,19 +95,19 @@ html {
 
 #next, #prev{
     position: absolute;
-    bottom: 250px;
+    bottom: 17rem;
     color: #2A3952;
     background-color: transparent;
     border: none;
-    font-size: 72px;
+    font-size: 4.5rem;
     font-family: monospace;
     font-weight: bold;
-    left: 700px;
+    left: 43.75rem;
 }
 
 #next{
     left: unset;
-    right: 80px;
+    right: 9rem;
 }
 
 #next, #prev:hover{
