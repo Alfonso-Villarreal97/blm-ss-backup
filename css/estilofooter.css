@@ -1,0 +1,79 @@
+body{
+    overflow-y: scroll !important; /* Habilita el scroll vertical */ 
+}
+
+.container::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    display: none;  /* Ocultar scroll */
+}
+.logo_principal {
+    margin-right: 450px; /* Espacio entre el logo y los elementos de navegación */
+}
+.piepagina{
+    width: 100%;
+    background-color: #2a3952;
+}
+.piepagina .grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0;
+}
+
+.piepagina .grupo1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.piepagina .grupo1 .box figure img{
+    width: 100px;
+  
+}
+
+.piepagina .grupo1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.piepagina .grupo1 .box p{
+    color: white;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.piepagina .grupo1 .redes_footer a{
+    display: inline-block;
+    text-decoration: none;
+    width: 30px;
+    height: 20px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    text-align: center;
+    transition: all;
+    font-size: 30px;
+}
+
+.piepagina .grupo1 .redes_footer a:hover{
+  color:gray;
+}
+
+.piepagina .grupo2{
+    background-color:#2a3952 ;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;   
+}
+
+.grupo2 a{ 
+    color: white; 
+    margin-left: 30px;  
+}
