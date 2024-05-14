@@ -1,0 +1,33 @@
+.fondos--consultas video {
+    position: absolute;
+    z-index: -5;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    background-size: 100px;
+}
+
+.contenido-consultas h1{
+    position: relative;
+    color: #fff;
+    left: 11rem;
+    top: 2.8rem;
+    font-size: 4rem;
+}
+
+.contenido-consultas .titulo,
+.contenido-consultas .texto{
+    position: relative;
+    color: #fff;
+    top: 2.8rem;
+    left: 11rem;
+    width: 35.5rem;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+.contenido-consultas .texto{
+    font-size: 1.275rem;
+}
