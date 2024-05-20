@@ -10,48 +10,44 @@ body{
 .logo_principal {
     margin-right: 450px; /* Espacio entre el logo y los elementos de navegación */
 }
-.piepagina{
-    width: 100%;
-   height: 40%;
+
+.piepagina {
     background-color: #2a3952;
-    
+    color: white;
+    padding: 1px 0; /* Ajuste del padding para reducir el tamaño vertical */
+    font-size: 15px;  /* Tamaño de fuente general */
+    margin-top: 30px; /* Ajuste de margen superior para separarlo del contenido */
 }
-.piepagina .grupo1{
-    width: 100%;
+
+.piepagina .grupo1 {
     max-width: 1200px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 50px;
-    padding: 45px 0;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;  /* Espacio entre los elementos */
 }
 
-.piepagina .grupo1 .box figure{
-    width: 100%;
-    height: 100%;
+.piepagina .grupo1 .box figure {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.piepagina .grupo1 .box figure img{
-    width: 100px;
-  
+.piepagina .grupo1 .box figure img {
+    width: 100px;  /* Tamaño del logo */
 }
 
-.piepagina .grupo1 .box h2{
-    color: white;
-    margin-bottom: 25px;
-    font-size: 20px;
+.piepagina .grupo1 .box h2 {
+    font-size: 16px;  /* Tamaño del título */
+    margin-bottom: 15px;
 }
 
-.piepagina .grupo1 .box p{
-    color: white;
+.piepagina .grupo1 .box p {
     margin-bottom: 10px;
     text-align: justify;
 }
 
-.piepagina .grupo1 .redes_footer a{
+.piepagina .grupo1 .redes_footer a {
     display: inline-block;
     text-decoration: none;
     width: 30px;
@@ -64,20 +60,23 @@ body{
     font-size: 30px;
 }
 
-.piepagina .grupo1 .redes_footer a:hover{
-  color:gray;
-}
-
-.piepagina .grupo2{
-    background-color:#2a3952 ;
-    padding: 15px 10px;
+.piepagina .grupo2 {
     text-align: center;
-    color: white;   
-
+    padding: 5px 10px;
+    background-color: #2a3952;
 }
 
-.grupo2 a{ 
-    color: white; 
-    margin-left: 30px; 
+.piepagina .grupo2 small {
+    font-size: 12px;  /* Tamaño del texto de copyright */
+}
 
+.piepagina .grupo2 a {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+/* Estilos adicionales */
+.piepagina .grupo1 .redes_footer a:hover {
+    color: lightgray;  /* Cambio de color al pasar el ratón */
 }
