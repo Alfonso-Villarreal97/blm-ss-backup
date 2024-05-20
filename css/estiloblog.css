@@ -1,64 +1,52 @@
-
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
     font-family: "League Spartan", sans-serif; /* Aplica la fuente League Spartan a todos los elementos */
-}
-body{
+  }
+  body{
     overflow-y: scroll !important; /* Habilita el scroll vertical */ 
-}
-
-.container::-webkit-scrollbar {
-    width: 8px;     /* Tamaño del scroll en vertical */
-    height: 8px;    /* Tamaño del scroll en horizontal */
+  }
+  
+  .container::-webkit-scrollbar {
+    width: 8px;  /* Tamaño del scroll en vertical */
+    height: 8px;  /* Tamaño del scroll en horizontal */
     display: none;  /* Ocultar scroll */
-}
-
-/* Estilo para el fondo */
-.fondoblog {
+  }
+  
+  /* Estilo para el fondo */
+  .fondoblog {
     position: fixed;
+    background-size: cover;
     top: 0;
     left: 0;
     width: 100vw; /* Ancho de la ventana del navegador */
     height: 100vh; /* Alto de la ventana del navegador */
     z-index: -1;
- 
-}
-
-/* Estilo texto de la pagina */
-.titulo_blog{
+  }
+  
+  /* Estilo texto de la pagina */
+  .titulo_blog{
     font-size: 40px;
     color: #2a3952; 
     font-weight: bold; /* Hace que el texto esté en negrita */
     margin-left: 55px;
     margin-top: 15px;
-}
-
-.all_psot, .dudas {
-    display: inline-block; /* Mostrar los elementos en línea */
-    margin-left: 55px; /* Espacio entre los elementos */
-    margin-right: 20px; /* Espacio entre las opciones */
-    font-size: 25px;
-    margin-top: 30px;
-    font-weight: bold;
-    text-decoration: none; /* Elimina el subrayado de todos los enlaces dentro de .opciones */
-    color: #2a3952;
-    transition: opacity 0.3s ease; /* Transición suave de la opacidad */
-}
-.opciones a:hover {
+  }
+  
+  .opciones a:hover {
     opacity: 0.7; /* Reducción de la opacidad al pasar el mouse */
-}
-
-/* estilo barra de busqueda */
-.search-bar {
+  }
+  
+  /* estilo barra de busqueda */
+  .search-bar {
     margin-left: 1000px; /* Colocar la barra de búsqueda a la derecha */
     position: relative; /* Para posicionar el icono dentro del input */
     margin-top: -45px;
     
-}
-
-.search-bar input[type="text"] {
+  }
+  
+  .search-bar input[type="text"] {
     width: 200px; /* Ancho del campo de búsqueda */
     height: 30px; /* Altura del campo de búsqueda */
     padding-right: 10px; /* Espacio para el botón de búsqueda */
@@ -66,68 +54,69 @@ body{
     border-radius: 20px; /* Bordes curvos */
     border: 1px solid #ccc; /* Borde */
     
-}
-
-.search-bar button[type="submit"] {
+  }
+  
+  .search-bar button[type="submit"] {
     background-color: transparent;
     border: none;
     padding: 5px;
-    position: absolute;
-    top: 50%;
-    right: 25px;
-    transform: translateY(-50%);
+    position: relative;
+    right: -170px;
+    transform: translateY(-90%);
     background-color: transparent;
     border: none;
     padding: 5px;
-}
-
-.search-bar button[type="submit"] i {
+    margin-right:65px;
+    font-size: 20px; /* Tamaño de fuente */
+  }
+  
+  .search-bar button[type="submit"] i {
     font-size: 18px; /* Tamaño del icono */
     color: #555; /* Color del icono de búsqueda */
     color: #555;
-    margin-right:125px; /* Espacio entre el icono y el input */
-}
-
-.post-list{
+    margin-right:20px; /* Espacio entre el icono y el input */
+    
+  }
+  
+  .post-list{
     display: flex;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
     padding: 30px 15px;
     margin-top: 50px;
-}
-
-.content{
+  }
+  
+  .content{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas por defecto */
     grid-gap: 20px;
     max-width:1000px;
     margin: auto;
-}
-
+  }
+  
 .post-img{
-     width: 100%; 
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    transition: .2s;
+  width: 100%; 
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  transition: .2s;
 }
-
 
 .post{
-    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .1);
-    transition: .2s;
-    /* overflow: hidden; */
+  box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .1);
+  transition: .2s;
+  /* overflow: hidden; */
 }
 .post:hover{
-    transform: translateY(-4px);
-    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .15);
+  transform: translateY(-4px);
+  box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .15);
 }
 
 .post-header{
-    width: 100%;
-    height: 200px;
-    /* overflow: hidden; */
+  width: 100%;
+  height: 200px;
+  /* overflow: hidden; */
 cursor: pointer;
 }
 .post:hover .post-img-1,
@@ -135,45 +124,59 @@ cursor: pointer;
 .post:hover .post-img-3,
 .post:hover .post-img-4,
 .post:hover .post-img-5{
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .post-body{
-    padding: 15px;
-    text-align: center;
+  padding: 15px;
+  text-align: center;
 }
 
 .post-body span{
-    display: inline-block;
-    color: #999;
-    margin-bottom: 10px;
+  display: inline-block;
+  color: #999;
+  margin-bottom: 10px;
 }
 
 .post-body h2{
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .post-body p{
-    line-height: 1.5;
-    margin-bottom: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 .post-body .post-link{
-    display: block;
-    text-decoration: none;
-    padding: 10px;
-    background: #2b6ebb;
-    color: #fff;
-    width: 50%;
-    margin: auto;
-    border-radius: 20px;
-    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .1);
-    transition: .2s;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  background: #2b6ebb;
+  color: #fff;
+  width: 50%;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .1);
+  transition: .2s;
 }
 
 .post-body .post-link:hover{
-    background: #3378c7;
-    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .1);
-    transform: translateY(-2px);
+  background: #3378c7;
+  box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .1);
+  transform: translateY(-2px);
 }
 
+
+/* Blogs responsive */
+@media (max-width:840px) {
+  .content{
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas para pantallas más pequeñas */
+  }
+}
+
+@media (max-width:600px) {
+  .content{
+    grid-template-columns: repeat(1, 1fr); /* 1 columna para pantallas aún más pequeñas */
+  }
+}
+  
