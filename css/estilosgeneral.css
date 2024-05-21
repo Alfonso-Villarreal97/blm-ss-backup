@@ -44,3 +44,10 @@ html {
 .logo_principal-otros {
   margin-right: 500px; /* Espacio entre el logo y los elementos de navegación */
 }
+
+.footer{
+  width: 100vw !important;
+  height: 220px !important;
+  display: flex;
+  align-items: flex-end;
+}
