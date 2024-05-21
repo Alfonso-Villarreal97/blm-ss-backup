@@ -1,3 +1,8 @@
+*{
+    font-family: "League Spartan", sans-serif;/*Cambiar el tipo de letra de todo el documento*/
+    font-weight: 300;
+}
+
 body{
     overflow-y: scroll !important; /* Habilita el scroll vertical */ 
 }
@@ -7,6 +12,7 @@ body{
     height: 8px;    /* Tamaño del scroll en horizontal */
     display: none;  /* Ocultar scroll */
 }
+
 .logo_principal {
     margin-right: 450px; /* Espacio entre el logo y los elementos de navegación */
 }
@@ -16,7 +22,7 @@ body{
     color: white;
     padding: 1px 0; /* Ajuste del padding para reducir el tamaño vertical */
     font-size: 15px;  /* Tamaño de fuente general */
-    margin-top: 30px; /* Ajuste de margen superior para separarlo del contenido */
+    margin: 62px 0 0 0; /* Ajuste de margen superior para separarlo del contenido */
 }
 
 .piepagina .grupo1 {
@@ -40,6 +46,8 @@ body{
 .piepagina .grupo1 .box h2 {
     font-size: 16px;  /* Tamaño del título */
     margin-bottom: 15px;
+    margin-top: 30px;
+    font-weight: bold;
 }
 
 .piepagina .grupo1 .box p {
@@ -52,6 +60,7 @@ body{
     text-decoration: none;
     width: 30px;
     height: 20px;
+    margin-top: 15px;
     line-height: 45px;
     color: white;
     margin-right: 10px;
