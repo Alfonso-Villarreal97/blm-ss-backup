@@ -5,7 +5,14 @@
     font-family: "League Spartan", sans-serif; /* Aplica la fuente League Spartan a todos los elementos */
   }
   body{
-    overflow-y: scroll !important; /* Habilita el scroll vertical */ 
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll; /* Habilita el scroll vertical */
+    background-image: url('../img/BuscarEmpleoFondo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll; /* Cambia la posición de la imagen al desplazarse */
   }
   
   .container::-webkit-scrollbar {
@@ -16,13 +23,8 @@
   
   /* Estilo para el fondo */
   .fondoblog {
-    position: fixed;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    width: 100vw; /* Ancho de la ventana del navegador */
-    height: 100vh; /* Alto de la ventana del navegador */
-    z-index: -1;
+  
+
   }
   
   /* Estilo texto de la pagina */
@@ -38,45 +40,60 @@
     opacity: 0.7; /* Reducción de la opacidad al pasar el mouse */
   }
   
-  /* estilo barra de busqueda */
+/* CSS for Responsive Search Bar */
+
+.search-bar {
+  display: flex; /* Enable flexbox layout */
+  justify-content: flex-end; /* Align items to the right end */
+  align-items: center; /* Maintain vertical alignment */
+  max-width: 500px; /* Adjust as needed for desired width */
+  margin: 0 auto; /* Center the search bar horizontally */
+}
+
+.responsive-input {
+  flex: 1; /* Make input fill available space */
+  padding: 10px; /* Adjust padding as needed */
+  border: 1px solid #ccc; /* Optional border */
+  border-radius: 5px; /* Optional rounded corners */
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+#searchButton {
+  padding: 10px 20px; /* Increase padding for larger size */
+  font-size: 18px; /* Increase font size for larger text */
+  border: none; /* Remove default button border */
+  background-color: gray; /* Example button color */
+  color: #fff; /* Example button text color */
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
   .search-bar {
-    margin-left: 1000px; /* Colocar la barra de búsqueda a la derecha */
-    position: relative; /* Para posicionar el icono dentro del input */
-    margin-top: -45px;
-    
+    flex-wrap: wrap; /* Wrap elements on smaller screens */
+    width: 90%; /* Make search bar occupy most of the width */
   }
+
+  .responsive-input {
+    width: 100%; /* Ensures full width on smaller screens */
+  }
+
+  #searchButton {
+    padding: 8px 15px; /* Adjust padding for smaller screens */
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .search-bar {
+    width: 95%; /* Make search bar occupy most of the width */
+  }
+}
+
+.search-bar>* { /* Target all direct children of .search-bar */
+  align-self: center; /* Align each child vertically */
+}
+
   
-  .search-bar input[type="text"] {
-    width: 200px; /* Ancho del campo de búsqueda */
-    height: 30px; /* Altura del campo de búsqueda */
-    padding-right: 10px; /* Espacio para el botón de búsqueda */
-    font-size: 16px; /* Tamaño de la fuente */
-    border-radius: 20px; /* Bordes curvos */
-    border: 1px solid #ccc; /* Borde */
-    
-  }
-  
-  .search-bar button[type="submit"] {
-    background-color: transparent;
-    border: none;
-    padding: 5px;
-    position: relative;
-    right: -170px;
-    transform: translateY(-90%);
-    background-color: transparent;
-    border: none;
-    padding: 5px;
-    margin-right:65px;
-    font-size: 20px; /* Tamaño de fuente */
-  }
-  
-  .search-bar button[type="submit"] i {
-    font-size: 18px; /* Tamaño del icono */
-    color: #555; /* Color del icono de búsqueda */
-    color: #555;
-    margin-right:20px; /* Espacio entre el icono y el input */
-    
-  }
   
   .post-list{
     display: flex;
