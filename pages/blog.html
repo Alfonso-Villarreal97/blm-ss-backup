@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <!-- Estilos de css usados para la pagina -->
    <link rel="stylesheet" href="../css/estiloblog.css">
+   <link rel="stylesheet" href="../css/estilosblogs.css">
     <link rel="stylesheet" href="../css/estilosgeneral.css">
     <link rel="stylesheet" href="../css/estiloblmindex.css">
     <link rel="stylesheet" href="../css/estilofooter.css">
@@ -23,6 +24,7 @@
 </head>
 <!-- Empieza el cuerpo de la página blog -->
 <body>
+    
  <!-- El header es el menu y logo de la pagina -->
  <header class="header">
     <div class="logo_principal">
@@ -58,148 +60,107 @@
 <main>
  <!-- texto de la pagina -->
     <h1 class="titulo_blog">PREGUNTAS FRECUENTES</h1>
-   <!--  botones para ver todos los post o el de dudas -->
-    <!-- <div class="opciones">
-            <a href="#"  class="all_psot">
-                All posts
-            </a>
-            <a href="#" class="dudas">
-                Dudas
-            </a>
-    </div> -->
   <!--   barra de busqueda -->  
   <div class="search-bar">
-    <input type="text" id="searchBar" placeholder="Buscar...">
+    <input type="text" id="searchBar" placeholder="Buscar..." class="responsive-input">
     <button type="submit" id="searchButton"><i class="fas fa-search"></i> Buscar</button>
-</div>
-<div id="results"></div>
-
-<script src="../javascript/barrabusqueda.js"></script>
+  </div>
+  <div id="results"></div>
+  
+  <script src="../javascript/barrabusqueda.js"></script>
+  
 
 
 <!-- Inicio de los blogs -->
     <section class="post-list">
         <div class="content">
+
             <article class="post">
                 <div class="post-header">
                     <div>
-                       <img src="../img/nocontrata.png" class="post-img"> 
+                       <img src="../img/nocontrata.jpg" class="post-img"> 
                     </div>
                 </div>
                 <div class="post-body">
                     <span>10 octubre,2023 1m</span>
-                    <h2>¿Qué hago si una empresa no me contrata por tener una demanda laboral?</h2>
+                    <h2>¿Qué hago si una empresa no me...</h2>
                     <p>Dentro de nuestros lineamientos legales y política de calidad, 
-                    establecemos a las empresas contratantes de nuestro servicio,</p>
+                    establecemos a las empresas contratantes de nuestro servicio,el no 
+                    poder utilizar el sistema BLM como herramienta  En BURO LABORAL MÉXICO 
+                    respetamos lo estipulado en el artículo 133 Fracción 9 de la...</p>
                     <a href="../pages/empresanocontrata.html" class="post-link">Leer más...</a>
                 </div>
             </article>
+
             <article class="post">
                 <div class="post-header">
                     <div>
-                        <img src="../img/arco.png" class="post-img">    
+                        <img src="../img/derechosarco.jpg" class="post-img">    
                     </div>
                 </div>
                 <div class="post-body">
                     <span>10 octubre,2023 1m</span>
                     <h2>¿Cómo puedo ejercer mis derechos ARCO?</h2>
                     <p>ARCO (Acceso, Rectificación, Cancelación y Oposición de datos personales) es el derecho 
-                    que tienes para poder autorizar o negar el uso de tu información personal a terceros</p>
+                    que tienes para poder autorizar o negar el uso de tu información personal a terceros en 
+                    nuestro caso en particular a las empresas contratantes de nuestro servicio...</p>
                     <a href="../pages/derechosarco.html" class="post-link">Leer más...</a>
                 </div>
             </article>
+
             <article class="post">
                 <div class="post-header">
                     <div>
-                        <img src="../img/boletino.png" class="post-img">    
+                        <img src="../img/Empresaboletino.jpg" class="post-img">    
                     </div>
                 </div>
                 <div class="post-body">
                     <span>10 octubre,2023 1m</span>
-                    <h2>¿Cómo puedo saber si una Empresa me boletinó?</h2>
-                    <p>No es posible "boletinar" a un trabajador, el único boletín que 
-                    existe es el que emiten las Juntas de Conciliación y Arbitraje Local y Federal de cada Estado.</p>
-                    <a href="../pages/empresaboletino.html" class="post-link">Leer más...</a>
+                    <h2>¿Cómo puedo saber si una Empresa me...</h2>
+                    <p>No es posible "boletinar" a un trabajador, el único boletín 
+                    que existe es el que emiten las Juntas de Conciliación y Arbitraje 
+                    Local y Federal de cada Estado. En BURO LABORAL MÉXICO  respetamos lo 
+                    estipulado en el artículo 133 Fracción 9 de la Ley Federal del trabajo en donde...</p>
+                    <a href="../pages/derechosarco.html" class="post-link">Leer más...</a>
                 </div>
             </article>
+
+            
+
             <article class="post">
                 <div class="post-header">
                     <div>
-                        <img src="../img/autorizacion.png" class="post-img">    
+                        <img src="../img/DatosPersonales.jpg" class="post-img">    
                     </div>
                 </div>
                 <div class="post-body">
                     <span>10 octubre,2023 1m</span>
                     <h2>¿Porqué tienen mis datos personales sin mi autorización?</h2>
                     <p>Antes que nada debemos de recordar que en post anteriores, hemos informado que Buró Laboral México 
-                    "no vende ni solicita tus datos personales",</p>
+                    "no vende ni solicita tus datos personales"...</p>
                     <a href="../pages/datospersonales.html" class="post-link">Leer más...</a>
                 </div>
             </article>
+
             <article class="post">
                 <div class="post-header">
                     <div>
-                        <img src="../img/Pensando.jpg" class="post-img">    
+                        <img src="../img/MesesSinTrabajo.jpg" class="post-img">    
                     </div>
                 </div>
                 <div class="post-body">
                     <span>6 octubre,2023 1m</span>
                     <h2>Llevo meses en búsqueda de empleo y nadie me contrata</h2>
                     <p>Una de las preguntas más comunes dentro de nuestra plataforma es saber si una empresa no contrata a algún 
-                    candidato por salir mal en su análisis laboral y la respuesta es la siguiente:</p>
+                    candidato por salir mal en su análisis laboral y la respuesta es la siguiente...</p>
                     <a href="../pages/nocontratan.html" class="post-link">Leer más...</a>
                 </div>
             </article>
+
         </div>
     </section>
 </main>
-<!-- Pie de página  -->   
-<footer class="piepagina">
-    <div class="grupo1">
-        <div class="box">
-            <figure>
-                <a href="#">
-                    <img src="../img/LOGO CON FONDO.png" alt="Logo de la empresa Buro">
-                </a>
-            </figure>
-        </div>
-        <div class="box">
-            <h2>SOBRE NOSOTROS</h2>
-            <P>BLM brinda los servicios de investigación e integración de referencias y 
-            antecedentes laborales, empleando sistemas y ejecutando procesos con certificaciones
-            de alta calidad y desempeño</P>
-        </div>
-        <div class="box">
-            <h2>SIGUENOS</h2>
-            <div class="redes_footer">
-                <a
-                    href="https://www.instagram.com/burolaboralmexico?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/BuroLaboralMexico/">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a href="https://www.tiktok.com/@burolaboralmexico?is_from_webapp=1&sender_device=pc">
-                    <i class="fa-brands fa-tiktok"></i>
-                </a>
-                <a href="https://www.linkedin.com/company/burolaboralmexico/">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="mailto:ventas@blm.com.mx">
-                    <i class="fa-regular fa-envelope"></i>
-                </a> 
-            </div>
-        </div>
-    </div>
-    <div class="grupo2">
-        <small>&copy;2023 <b>Buro Laboral México SC</b></small>
-        <a href="../pages/avisoprivacidad.html">Aviso de Privacidad</a>
-    </div>
-</footer>
+<!--Colocar footer-->
+<iframe class="footer "src="/includes/footer.html" frameborder="0"></iframe>   
 </body>
-<!-- fondo de la pagina -->
-<div class="fondoblog">
-    <img src="../img/BuscarEmpleoFondo.png">
-</div>
-
 </html>
