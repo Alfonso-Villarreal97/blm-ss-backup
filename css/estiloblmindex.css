@@ -32,10 +32,7 @@
 }
 
 .header .navegacion{
-    align-items: flex-end;
-    flex-flow: nowrap;
-    padding: 0.5rem 0rem;
-      
+    padding: 0.5rem 0rem;      
 }
 
  .navegacion ul li{
@@ -60,6 +57,7 @@
     padding: 0.625rem 1.25rem;
     background-color: var(--selectedUneteInicio);
     border-radius: 0.938rem;
+    transition: 400ms;
 }
 
 .nav-enlace--activo-unete:hover{
@@ -67,7 +65,6 @@
     padding: 0.625rem 1.25rem;
     border-radius: 0.938rem;
     color: var(--selectedItemAnchor);
-    transition: 400ms;
 }
 
 .nav-enlace--selected{
@@ -77,6 +74,7 @@
     padding: 0.625rem 0.938rem;
     background-color: var(--selectedLinkInicio);
     border-radius: 0.938rem;
+    transition: 400ms;
 }
 
 /* Estilos para el resto de opciones dentro del NavBar*/
@@ -85,16 +83,18 @@
     text-decoration: none;
     font-size: 1.25rem; 
     color: var(--selectedItemAnchor); 
-    padding: 0.625rem 0.938rem;
+    padding: 0.313rem 0.938rem;
+    transition: 400ms;
 }
 
 .nav-enlace--selectedLight{
     text-decoration: none;
-    font-size:1.25rem; 
+    font-size: 1.25rem; 
     color: var(--selectedItemAnchor); 
     padding: 0.625rem 0.938rem;
     background-color: var(--selectedLinkRest);
     border-radius: 0.938rem;
+    transition: 400ms;
 }
 
 .nav-enlace--activolight{
@@ -104,16 +104,17 @@
     padding: 0.625rem 1.25rem;
     background-color: var(--selectedUneteRest);
     border-radius: 0.938rem;
+    transition: 400ms;
 }
 
 /*Efectos Hover para el NavBarCambio puntero a mano al pasar sobre un elemento*/
 .nav-enlace:hover {
     cursor: pointer;
     background-color: var(--selectedItemInicio);
-    padding: 10px 15px;
-    border-radius: 15px;
+    padding: 0.625rem 0.938rem;
+    border-radius: 0.938rem;
     color: var(--selectedItemAnchor);
-    transition: 400ms;
+    transition: 500ms;
 }
 
 .nav-enlace--lightside:hover {
@@ -122,9 +123,15 @@
     padding: 0.625rem 0.938rem;
     border-radius: 0.938rem;
     color: var(--selectedItemInicio);
-    transition: 400ms;
+    transition: 500ms;
 }
 
+.nav-enlace--activolight:hover{
+    background-color: var(--selectedItemInicio);
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.938rem;
+    color: var(--selectedItemAnchor);
+}
 /* Estilo para la p, texto, del inicio */
 
 .texto_inicio{
