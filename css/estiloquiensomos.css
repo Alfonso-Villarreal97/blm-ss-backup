@@ -8,9 +8,11 @@ html {
   padding: 0;
   overflow: hidden;
 }
+
 body{
     overflow-y: scroll !important; /* Habilita el scroll vertical */ 
 }
+
 .contenedor2{
     position: relative;
 }
@@ -19,8 +21,8 @@ body{
 }
 
 .container::-webkit-scrollbar {
-    width: 8px;     /* Tamaño del scroll en vertical */
-    height: 8px;    /* Tamaño del scroll en horizontal */
+    width: 0.5rem;     /* Tamaño del scroll en vertical */
+    height: 0.5rem;    /* Tamaño del scroll en horizontal */
     display: none;  /* Ocultar scroll */
 }
 
@@ -43,55 +45,58 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 50px;
+    margin: 0 3.125rem;
 }
 
 .controls {
-    position: absolute;
-    top: 350px;
-    transform: translateY(-50%);
-    left: 570px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: absolute;
+    top: 21.875rem;
+    left: 36.5rem;
+    transform: translateY(-50%);    
 }
 
 .icon-up,
 .icon-down {
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #2A3952;
     cursor: pointer;
 }
 
 .up {
-    margin-bottom: 40px;    
+    margin-bottom: 2.5rem;    
 }
 
 .down {
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
 
 .slider {
-    position: fixed;
-    width: 500px;
-    height: 600px;
-    overflow: hidden;
-    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 31.25rem;
+    height: 50rem;
+    margin: 1rem 4rem;
+    overflow: hidden;    
 }
 
 .item {
-    top: 33vh;
+    display: flex;
+    flex-direction: column;
+    margin: 10rem 0rem;
     background: rgba(255, 255, 255, 1);
-    border-radius: 25px;
+    border-radius: 1.563rem;
     text-align: justify;
     position: absolute;
     display: grid;
-    padding: 20px;
+    padding: 1.25rem;
     opacity: 0.4;
     transform: translateY(90%) scale(0.7);
     transition: opacity 0.5s, transform 0.5s;
     font-family: "League Spartan", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .item.active {
@@ -118,8 +123,8 @@ body{
 }
 
 #title-icons {
-    height: 40px;
-    width: 40px;
+    height: 2.5rem;
+    width: 2.5rem;
 }
 
 .titulos h2 {
@@ -133,12 +138,4 @@ body{
 .titulos h2 img {
     display: inline-block;
     vertical-align: middle;
-}
-
-@media (max-width: 768px) {
-    .slider .item {
-        font-size: 12px;
-        background: rgba(255, 255, 255, 1);
-        width: 300px;
-    }
 }
