@@ -3,6 +3,7 @@
 const blogs = [
     {
         title: "¿Qué hago si una empresa no me contrata por tener una demanda laboral?",
+        title: "¿Qué hago si una empresa no me...",
         url: "../pages/empresanocontrata.html",
         date: "10 octubre, 2023 1m",
         img: "../img/nocontrata.png",

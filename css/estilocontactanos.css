@@ -182,6 +182,25 @@
       width: 95%; /* Ajustar el ancho de la tabla en pantallas pequeñas */
       margin: 10px auto; /* Ajustar el margen en pantallas pequeñas */
     }
+    .header {
+      padding: 10px 0;
+    }
+  
+    .logo_header {
+      max-width: 150px;
+    }
+  
+    .navegacion {
+      text-align: center;
+    }
+  
+    .navegacion ul {
+      flex-wrap: wrap; /* Permite que los elementos se distribuyan en varias líneas */
+    }
+  
+    .navegacion li {
+      margin: 10px 0;
+    }
   }
   
   
