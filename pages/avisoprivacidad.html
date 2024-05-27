@@ -19,34 +19,35 @@
     <script src="../javascript/animacionSelectNav.js"></script>
         <title>Avisos de Privacidad | BLM</title>
     </head>
-    <header class="header">
-        <a href="../blmindex.html">
-            <img class="logo_header" src="../img/LOGO CON FONDO.png" alt="Logo Buro Laboral">
-        </a>
-        
-        <nav class="navegacion">
-            <ul>
-                <li>
-                    <a href="../blmindex.html" class="nav-enlace--lightside">Inicio</a>
-                </li>
-                <li>
-                    <a href="pages/quiensomos.html" class="nav-enlace--lightside">¿Quiénes somos?</a>
-                </li>
-                <li>
-                    <a href="pages/servicios.html" class="nav-enlace--lightside">Servicios</a>
-                </li>
-                <li>
-                    <a href="pages/blog.html" class="nav-enlace--lightside">Blog</a>
-                </li>
-                <li>
-                    <a href="pages/contactanos.html" class="nav-enlace--lightside">Contáctanos</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-enlace--activolight">Únete</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+   <!-- El header es el menu y logo de la pagina -->
+ <header class="header">
+    <a href="../blmindex.html">
+        <img class="logo_header" src="../img/LOGO CON FONDO.png" alt="Logo Buro Laboral">
+    </a>
+    
+    <nav class="navegacion">
+        <ul>
+            <li>
+                <a href="../blmindex.html" class="nav-enlace--lightside">Inicio</a>
+            </li>
+            <li>
+                <a href="../pages/quiensomos.html" class="nav-enlace--lightside">¿Quiénes somos?</a>
+            </li>
+            <li>
+                <a href="../pages/servicios.html" class="nav-enlace--lightside">Servicios</a>
+            </li>
+            <li>
+                <a href="../pages/blog.html" class="nav-enlace--lightside">Blog</a>
+            </li>
+            <li>
+                <a href="../pages/contactanos.html" class="nav-enlace--lightside">Contáctanos</a>
+            </li>
+            <li>
+                <a href="#" class="nav-enlace--activolight">Únete</a>
+            </li>
+        </ul>
+    </nav>
+</header>
     <body>
         <div class="titulo_aviso_privacidad">
             <h1>AVISO DE PRIVACIDAD</h1>
@@ -207,7 +208,10 @@
                 </p>
             </article>
             <p class="final">Quiero ejercer<br> mis derechos<br> ARCO ahora</p>
-            <button class="ejercerderechos" onclick="window.location.href = 'otra_pagina.html';">Ejercer mis derechos ahora</button>
+            <a href="https://burolaboralmexico.net/trabajador/users/login" target="_blank">
+                <button class="ejercerderechos">Ejercer mis derechos ahora</button>
+              </a> 
+           
         </main>
     </body>
 </html>
