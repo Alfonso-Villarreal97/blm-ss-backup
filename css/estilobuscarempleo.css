@@ -14,6 +14,16 @@ body {
     background-size: cover;
     background-attachment: local;
 }
+.principalbuscartrabajo{
+width: 100vw;
+height: 85vh;
+}
+
+.container::-webkit-scrollbar {
+    width: 8px;  /* Tamaño del scroll en vertical */
+    height: 8px;  /* Tamaño del scroll en horizontal */
+    display: none;  /* Ocultar scroll */
+  }
 
 /* Muestra en que pagina esta */
 .semicirculo_contactanos {
@@ -49,6 +59,8 @@ body {
     margin-top: -270px; /* Margen superior */    
     margin-left: 800px;
     margin-right: 100px;
+    border-radius: 50px; /* Forma de óvalo */
+    padding: 20px;
 }
 
 .Caja1 p {
