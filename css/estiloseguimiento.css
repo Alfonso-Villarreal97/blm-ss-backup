@@ -1,3 +1,16 @@
+* {
+    font-family: "League Spartan", sans-serif; /* Aplica la fuente League Spartan a todos los elementos */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll; /* Habilita el scroll vertical */
+}
+
+
+
+
 .fondoseguimiento video {
     position: absolute; /* Establece la posición del elemento de video de forma absoluta con respecto a su contenedor primario */
     top: 0; /* Coloca el video en la parte superior del contenedor primario */
@@ -8,31 +21,110 @@
     object-fit: cover; /* Ajusta el tamaño del video para cubrir completamente el contenedor sin distorsionar su relación de aspecto */
 }
 
+h1, h2, p {
+    color: white; /* Establece el color del texto en blanco */
+    text-align: right; /* Alinea el texto hacia la derecha dentro de su contenedor */
+    margin-right: 160px; /* Establece un espacio en el lado derecho */
+}
+
 h1 {
-    color: white; /* Establece el color del texto del h1 en blanco */
-    text-align: right; /* Alinea el texto del h1 hacia la derecha dentro de su contenedor */
-    margin-top: 50px; /* Establece un espacio en la parte superior del h1 de 50 píxeles */
-    margin-right: 160px; /* Establece un espacio en el lado derecho del h1 de 160 píxeles */
-    font-size: 50px; /* Establece el tamaño del texto del h1 en 50 píxeles */
+    margin-top: 50px; /* Espacio en la parte superior del h1 */
+    font-size: 50px; /* Tamaño del texto del h1 */
 }
 
 h2 {
-    color: white; /* Establece el color del texto del h2 en blanco */
-    text-align: right; /* Alinea el texto del h2 hacia la derecha dentro de su contenedor */
-    margin-right: 160px; /* Establece un espacio en el lado derecho del h2 de 160 píxeles */
-    font-size: 20px; /* Establece el tamaño del texto del h2 en 20 píxeles */
-    margin-top: 5px; /* Establece un espacio en la parte superior del h2 de 5 píxeles */
+    font-size: 20px; /* Tamaño del texto del h2 */
+    margin-top: 5px; /* Espacio en la parte superior del h2 */
 }
 
 p {
-    color: white; /* Establece el color del texto de los párrafos en blanco */
-    text-align: right; /* Alinea el texto de los párrafos hacia la derecha dentro de su contenedor */
-    margin-right: 160px; /* Establece un espacio en el lado derecho de los párrafos de 160 píxeles */
-    font-size: 18px; /* Establece el tamaño del texto de los párrafos en 18 píxeles */
-    margin-top: 5px; /* Establece un espacio en la parte superior de los párrafos de 5 píxeles */
+    font-size: 18px; /* Tamaño del texto de los párrafos */
+    margin-top: 5px; /* Espacio en la parte superior de los párrafos */
+}
+@media (min-width: 1500px) {
+    h1,h2{
+        margin-top: 100px;
+      }
+    .header .logo_header {
+        max-width: 200px; /* Aumenta el tamaño máximo del logo */
+    }
+    main {
+        padding: 40px;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 22px;
+    }
+}
+@media (min-width: 1400px) {
+    h1,h2{
+        margin-top: 100px;
+      }
+    .header .logo_header {
+        max-width: 200px; /* Aumenta el tamaño máximo del logo */
+    }
+    main {
+        padding: 40px;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 22px;
+    }
 }
 
 
-*{
-    font-family: "League Spartan", sans-serif; /* Aplica la fuente League Spartan a todos los elementos */
+/* Estilos Responsivos */
+@media (max-width: 1300px) {
+    h1,h2{
+        margin-top: 50px;
+      }
+    h1, h2, p {
+        margin-right: 500px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 768px) {
+  h1,h2{
+    margin-top: 50px;
+  }
+    h1, h2, p {
+       
+        margin-right: 50px;
+        text-align: left; /* Alinea el texto a la izquierda en pantallas pequeñas */
+        
+    }
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+   
+    h1, h2, p {
+        margin-right: 20px;
+        text-align: left; /* Alinea el texto a la izquierda en pantallas pequeñas */
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 14px;
+    }
 }
