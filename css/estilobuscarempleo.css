@@ -1,3 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif; /* Aplica la fuente League Spartan a todos los elementos */
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll; /* Habilita el scroll vertical */
+    background-image: url('../img/BuscarEmpleoFondo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: local;
+}
+
 /* Muestra en que pagina esta */
 .semicirculo_contactanos {
     background-color: #c2bdb4;
@@ -5,52 +22,50 @@
     border-radius: 50px; /* Forma de óvalo */
     transform: translateY(-50%);
 }
+
 /* Estilo titulos */
-.titulos h1{
+.titulos h1 {
     font-size: 40px;
     color: #2a3952; 
     font-weight: bold; /* Hace que el texto esté en negrita */
     margin-left: 55px;
 }
 
-.titulos h2{
+.titulos h2 {
     font-size: 20px;
     color: #2a3952; 
     font-weight: bold; /* Hace que el texto esté en negrita */
     margin-left: 55px;
 }
+
 /* Estilo texto principal y caja */
 .texto_principal {
     margin-left: 55px;
     padding: auto;
- 
 }
 
 .Caja1 {
-    
     background-color: #dedfde; /* Fondo gris */
-    margin-top: -270px; /* Margen inferior */    
-    position: flex; /* Hacer que el boton sea fija */
-    margin-left:800px;
+    margin-top: -270px; /* Margen superior */    
+    margin-left: 800px;
     margin-right: 100px;
 }
+
 .Caja1 p {
     color: #000; /* Color oscuro */
     font-size: 19px; /* Tamaño de fuente un poco más grande */
     line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
     text-align: justify; /* Justificar el texto */
-    
 }
 
 /* Estilo para el fondo */
-.fondobuscartrabajo{ 
-position: fixed; /* Fijar el fondo en una posición fija */
-top: 0;
-left: 0;
-width: 100%; /* Ajustar el ancho al 100% */
-height: 100%; /* Ajustar la altura al 100% */
-z-index: -1; /* Colocar el fondo detrás de otros elementos */
-
+.fondobuscartrabajo {
+    position: fixed; /* Fijar el fondo en una posición fija */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ajustar el ancho al 100% */
+    height: 100%; /* Ajustar la altura al 100% */
+    z-index: -1; /* Colocar el fondo detrás de otros elementos */
 }
 
 /* Estilo boton aplicar ahora */
@@ -70,15 +85,87 @@ z-index: -1; /* Colocar el fondo detrás de otros elementos */
     background-color: #000; /* Cambia el color de fondo al pasar el mouse */
     color: #fff; /* Cambia el color del texto al pasar el mouse */
 }
-/* Imagen de solicitud de empleo */
-.imagenaplicar img{
-   
-        width: 270px; /* Ajusta el ancho de la imagen según sea necesario */
-        height: auto; /* Mantener la relación de aspecto */
-        margin-top: 80px; /* Ajusta este valor para el espacio deseado desde arriba */
-        margin-bottom: 20px; /* Ajusta este valor para el espacio deseado desde abajo */
-        margin-left: 250px; /* Ajusta este valor para mover el botón hacia la derecha */
-      /*  background-color: #d7dadc; */
-       
 
+/* Imagen de solicitud de empleo */
+.imagenaplicar img {
+    width: 270px; /* Ajusta el ancho de la imagen según sea necesario */
+    height: auto; /* Mantener la relación de aspecto */
+    margin-top: 80px; /* Ajusta este valor para el espacio deseado desde arriba */
+    margin-bottom: 20px; /* Ajusta este valor para el espacio deseado desde abajo */
+    margin-left: 250px; /* Ajusta este valor para mover el botón hacia la derecha */
+}
+
+
+/* Estilos Responsivos */
+@media (max-width: 1200px) {
+    .Caja1 {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 20px;
+    }
+    .buscarempleo-boton a {
+        margin-left: 50px;
+    }
+    .imagenaplicar img {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .titulos h1 {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    .titulos h2 {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+    .texto_principal {
+        margin-left: 20px;
+    }
+    .buscarempleo-boton a {
+        margin-left: 20px;
+    }
+    .imagenaplicar img {
+        margin-left: 20px;
+        width: 200px;
+    }
+
+    .navegacion {
+        text-align: center;
+      }
+    
+      .navegacion ul {
+        flex-wrap: wrap; /* Permite que los elementos se distribuyan en varias líneas */
+      }
+    
+      .navegacion li {
+        margin: 10px 0;
+      }
+}
+
+@media (max-width: 480px) {
+    .titulos h1 {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+    .titulos h2 {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .texto_principal {
+        margin-left: 10px;
+    }
+    .Caja1 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .buscarempleo-boton a {
+        margin-left: 125px;
+        padding: 8px 16px;
+    }
+    .imagenaplicar img {
+        margin-left: 125px;
+        width: 150px;
+    }
 }
