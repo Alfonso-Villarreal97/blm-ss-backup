@@ -79,7 +79,8 @@ a {
   .imagengeneral {
     display: block;
     margin: 40px auto;
-    max-width: 80%;
+    width: 60%;
+   /*  max-width: 80%; */
   }
   
   /* Estilos para las redes sociales */
