@@ -12,7 +12,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-attachment: scroll; /* Cambia la posición de la imagen al desplazarse */
+    background-attachment: local !important;
   }
   
   .container::-webkit-scrollbar {
@@ -21,11 +21,7 @@
     display: none;  /* Ocultar scroll */
   }
   
-  /* Estilo para el fondo */
-  .fondoblog {
-  
 
-  }
   
   /* Estilo texto de la pagina */
   .titulo_blog{
