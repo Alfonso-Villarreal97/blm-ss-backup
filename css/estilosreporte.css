@@ -2,8 +2,6 @@
     font-family: "League Spartan", sans-serif;
 }
 
-
-
 .fondos--reporte video {
     position: absolute;
     z-index: -5;
@@ -14,13 +12,20 @@
     object-fit: cover;
     background-size: 100px;
 }
-
 .contenidoReporte{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
     color: white;
-    position: absolute;
-    padding: 0px 85px;
-    top: 120px;
-    left:100px;
+}
+
+.textos{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 3rem 0rem 8.5rem 15rem;
 }
 
 .contenidoReporte .titulo{
