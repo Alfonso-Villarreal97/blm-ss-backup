@@ -16,9 +16,6 @@ body{
 .contenedor2{
     position: relative;
 }
-.slider{
-    position: relative !important;
-}
 
 .container::-webkit-scrollbar {
     width: 0.5rem;     /* Tamaño del scroll en vertical */
@@ -27,7 +24,6 @@ body{
 }
 
 /* Estilo para el fondo */
-
 .fondo-quienes-somos img {
     position: absolute;
     z-index: -5;
@@ -41,7 +37,7 @@ body{
 /* Estilos para la animación y los elementos */
 
 .contenedor2 {
-    min-height: 80vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,7 +49,7 @@ body{
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 21.875rem;
+    top: 25.875rem;
     left: 36.5rem;
     transform: translateY(-50%);    
 }
@@ -74,10 +70,11 @@ body{
 }
 
 .slider {
+    position: relative !important;
     display: flex;
     flex-direction: column;
     width: 31.25rem;
-    height: 50rem;
+    height: 38rem;
     margin: 1rem 4rem;
     overflow: hidden;    
 }
