@@ -82,29 +82,34 @@
         </a>
     </div>
     <!-- Tabla de contactanos -->
-    <div class="contactanos">
+<!-- Tabla de contactanos -->
+<div class="contactanos">
+    <form action="https://formsubmit.co/garciaestebansantiago11@gmail.com" method="POST">
         <table class="tabla_contacto">
-          <tr>
-            <td><input type="text" name="nombre" placeholder="Nombre"></td>
-          </tr>
-          <tr>
-            <td><input type="text" name="correo" placeholder="Correo"></td>
-          </tr>
-          <tr>
-            <td><input type="text" name="asunto" placeholder="Asunto"></td>
-          </tr>
-          <tr>
-            <td><textarea name="mensaje" rows="4" cols="40" placeholder="Mensaje"></textarea></td>
-          </tr>
-          <tr>
-            <td>
-              <div class="button-container">
-                <button type="submit">Enviar</button>
-              </div>
-            </td>
-          </tr>
+            <tr>
+                <td><input type="text" name="name" placeholder="Nombre" required></td>
+            </tr>
+            <tr>
+                <td><input type="email" name="email" placeholder="Correo" required></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="subject" placeholder="Asunto" required></td>
+            </tr>
+            <tr>
+                <td><textarea name="message" rows="4" cols="40" placeholder="Mensaje" required></textarea></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="button-container">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </td>
+            </tr>
         </table>
-      </div>
+    </form>
+</div>
+
+
       
       
 </main>
