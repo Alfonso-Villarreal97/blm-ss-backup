@@ -148,8 +148,8 @@
 .botones_inicio{
     display: flex;
     flex-direction: row;
-    margin: 0rem 5rem;
-    gap: 8rem;
+    margin: 0rem 4.7rem;
+    gap: 2.3rem;
 }
 
 .botones_inicio .acceso_socios{
@@ -181,7 +181,29 @@
     transition: 400ms;
 }
 
+.botones_inicio .portal_boton{
+    display: flex;
+    align-items: center;
+    height: 1.125rem;
+    color: var(--selectedItemInicio);
+    font-size: 1.25rem;
+    padding: 1.2rem 2.5rem;
+    border-radius: 5rem;
+    background-color: var(--selectedUneteInicio);
+    text-decoration: none; 
+    margin-right: 0.313rem;
+    font-weight: bold;
+    transition: 400ms;
+}
+
 .botones_inicio .acceso_socios:hover{    
+    background-color: var(--selectedItemAnchor);
+    padding: 1.2rem 2.5rem;
+    border-radius: 5rem;
+    color: var(--selectedItemInicio);
+}
+
+.botones_inicio .portal_boton:hover{    
     background-color: var(--selectedItemAnchor);
     padding: 1.2rem 2.5rem;
     border-radius: 5rem;
