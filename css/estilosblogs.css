@@ -2,6 +2,9 @@ body{
     font-family: "League Spartan", sans-serif; /* Aplica la fuente League Spartan a todos los elementos */
     overflow-y: scroll; /* Habilita el scroll vertical */
 }
+
+
+
 .container::-webkit-scrollbar {
     width: 8px;  /* Tamaño del scroll en vertical */
     height: 8px;  /* Tamaño del scroll en horizontal */
@@ -73,7 +76,7 @@ text-align: justify;
   }
 a {
     color: #2a3952; 
-    font-weight: bold;
+    
   }
   
   .imagengeneral {
