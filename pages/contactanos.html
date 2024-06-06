@@ -84,19 +84,19 @@
     <!-- Tabla de contactanos -->
 <!-- Tabla de contactanos -->
 <div class="contactanos">
-    <form action="https://formsubmit.co/garciaestebansantiago11@gmail.com" method="POST">
+    <form id ="form" action="" class="form">
         <table class="tabla_contacto">
             <tr>
-                <td><input type="text" name="name" placeholder="Nombre" required></td>
+                <td><input name="name" id="name" placeholder="Nombre" required type="text"></td>
             </tr>
             <tr>
-                <td><input type="email" name="email" placeholder="Correo" required></td>
+                <td><input  name="email" id="email" placeholder="Correo" required type="email"></td>
             </tr>
             <tr>
-                <td><input type="text" name="subject" placeholder="Asunto" required></td>
+                <td><input  name="subject" id="subject" placeholder="Asunto" required type="text"></td>
             </tr>
             <tr>
-                <td><textarea name="message" rows="4" cols="40" placeholder="Mensaje" required></textarea></td>
+                <td><textarea name="message" id="message" rows="4" cols="40" placeholder="Mensaje" required></textarea></td>
             </tr>
             <tr>
                 <td>
@@ -107,7 +107,22 @@
             </tr>
         </table>
     </form>
+    <a href="mailto:garciaestebansantiago11@gmail.com" id="truco">mail</a>
 </div>
+<script>
+    const $form = document.querySelector('#form') //guardara formulario en constante
+    const $buttonMailto=document.querySelector('#truco')
+    $form.addEventListener('submit',handleSubmit)//que pase un evento al dar submit
+
+    function handleSubmit(event){ //Este es el evento que se ejecutara al dar submit
+        event.preventDefault()
+        const form= new FormData(this)        
+        console.log(form.get('name'))
+        $buttonMailto.setAttribute('href', 'mailto:garciaestebansantiago11@gmail.com?subject=Nombre: '+form.get('name')+ '  Asunto: ' +form.get('subject')+'&body= Mi corre es: '+form.get('email') + '    Mensaje: '+ form.get('message'));
+        $buttonMailto.click()
+    }
+
+</script>
 
 
       
