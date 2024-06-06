@@ -55,13 +55,13 @@
     font-size: 1.25rem; 
     color: white; 
     padding: 0.625rem 1.25rem;
-    background-color: var(--selectedUneteInicio);
+    background-color: var(--blue);
     border-radius: 0.938rem;
     transition: 400ms;
 }
 
 .nav-enlace--activo-unete:hover{
-    background-color: var(--selectedItemInicio);
+    background-color: var(--selectedLinkRest);
     padding: 0.625rem 1.25rem;
     border-radius: 0.938rem;
     color: var(--selectedItemAnchor);
