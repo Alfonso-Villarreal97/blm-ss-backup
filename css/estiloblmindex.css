@@ -55,7 +55,7 @@
     font-size: 1.25rem; 
     color: white; 
     padding: 0.625rem 1.25rem;
-    background-color: var(--blue);
+    background-color: var(--selectedUneteInicio);
     border-radius: 0.938rem;
     transition: 400ms;
 }
@@ -64,7 +64,7 @@
     background-color: var(--selectedLinkRest);
     padding: 0.625rem 1.25rem;
     border-radius: 0.938rem;
-    color: var(--selectedItemAnchor);
+    color: var(--selectedItemInicio);
 }
 
 .nav-enlace--selected{
@@ -102,7 +102,7 @@
     font-size: 1.25rem; 
     color: white; 
     padding: 0.625rem 1.25rem;
-    background-color: var(--selectedUneteRest);
+    background-color: var(--blue);
     border-radius: 0.938rem;
     transition: 400ms;
 }
