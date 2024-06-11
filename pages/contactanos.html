@@ -118,7 +118,7 @@
         event.preventDefault()
         const form= new FormData(this)        
         console.log(form.get('name'))
-        $buttonMailto.setAttribute('href', 'mailto:garciaestebansantiago11@gmail.com?subject=Nombre: '+form.get('name')+ '  Asunto: ' +form.get('subject')+'&body= Mi corre es: '+form.get('email') + '    Mensaje: '+ form.get('message'));
+        $buttonMailto.setAttribute('href', 'mailto:ventas@blm.com.mx?subject=' +form.get('subject')+'&body=NOMBRE: '+form.get('name')+ '  MI CORREO ES: '+form.get('email') + '    MENSAJE: '+ form.get('message'));
         $buttonMailto.click()
     }
 
