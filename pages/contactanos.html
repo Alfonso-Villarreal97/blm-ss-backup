@@ -108,18 +108,24 @@
         </table>
     </form>
     <a href="mailto:garciaestebansantiago11@gmail.com" id="truco">mail</a>
+    <div id="mensajeEnviado">Mensaje enviado</div>
 </div>
 <script>
     const $form = document.querySelector('#form') //guardara formulario en constante
     const $buttonMailto=document.querySelector('#truco')
+    const $mensajeEnviado = document.querySelector('#mensajeEnviado');
     $form.addEventListener('submit',handleSubmit)//que pase un evento al dar submit
 
     function handleSubmit(event){ //Este es el evento que se ejecutara al dar submit
         event.preventDefault()
         const form= new FormData(this)        
         console.log(form.get('name'))
-        $buttonMailto.setAttribute('href', 'mailto:ventas@blm.com.mx?subject=' +form.get('subject')+'&body=NOMBRE: '+form.get('name')+ '  MI CORREO ES: '+form.get('email') + '    MENSAJE: '+ form.get('message'));
+        $buttonMailto.setAttribute('href', 'mailto:garciaestebansantiago11@gmail.com?subject=' +form.get('subject')+'&body=NOMBRE: '+form.get('name')+ '  MI CORREO ES: '+form.get('email') + '    MENSAJE: '+ form.get('message'));
         $buttonMailto.click()
+        $mensajeEnviado.style.display = 'block'; // Mostrar el mensaje
+            setTimeout(() => {
+                location.reload(); // Recargar la página después de 2 segundos
+            }, 2000);
     }
 
 </script>
