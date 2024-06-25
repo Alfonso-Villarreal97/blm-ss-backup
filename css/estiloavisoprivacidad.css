@@ -50,6 +50,8 @@ body {
     color: white;
     padding: 15px; /* Relleno */
     border: none;
+    cursor: pointer; /* Esta propiedad cambia el cursor a mano */
+
   }
   
   /* Media Queries para Responsive Design */

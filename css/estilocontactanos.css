@@ -184,6 +184,7 @@
     font-size: 16px; /* Aumentar el tamaño de la fuente del texto del botón */
     border-radius: 5px; /* Añadir bordes redondeados al botón */
     border: 2px solid gray; /* Añadir un borde sólido verde al botón */
+    cursor: pointer; /* Esta propiedad cambia el cursor a mano */
   }
   
   /* Estilos para pantallas pequeñas (menor a 768px) */
