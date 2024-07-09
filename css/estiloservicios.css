@@ -12,8 +12,6 @@ body{
     overflow-y: scroll !important; /* Habilita el scroll vertical */ 
 }
 
-
-
 body,
 html {
   height: 100%;
@@ -68,8 +66,13 @@ html {
     border-radius: 0.625rem;
     padding: 1.25rem;
     transition: 0.5s;
-    right: 18.75rem; 
+    right: 18.75rem;
+}
+
+.item h1{
     text-align: center;
+    line-height: 2rem;
+
 }
 
 .item.active {
@@ -93,7 +96,7 @@ html {
     color: #595B62;
 }
 
-.icon-go:hover {
+.icon-go:hover{
     color:#2A3952;
 }
 
@@ -105,7 +108,6 @@ html {
     gap: 450px;
     margin-left: 700px;
 }
-
 
 #next, #prev{
     color: #2A3952;
