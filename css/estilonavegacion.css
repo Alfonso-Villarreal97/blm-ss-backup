@@ -1,0 +1,74 @@
+
+
+.toggle_btn{
+   display: none;
+    color: #2a3952;
+    font-size:30px;
+    margin-right: 10px;
+    
+}
+
+/* Menu de caida */
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 100px;
+   height: 0;
+    width: 250px;
+    background: rgb(255, 255,255,0.1); 
+  /*  background: white; */
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+height: 330px;
+}
+
+.dropdown_menu li{
+padding: 0.7rem;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+/*Responsive desing*/
+@media(max-width:1199px){
+    .nav-links{
+    display: none;
+}
+
+ .toggle_btn{
+    display: block;
+    
+  
+   
+}
+
+.dropdown_menu{
+    display: block;
+    position: fixed;
+    
+}
+
+.header {
+    position: fixed; /* Fijo en la ventana del navegador */
+    top: 0;
+    left: 0; /* Asegura que esté alineado a la izquierda */
+    width: 100%;
+    background: white;
+    z-index: 1000; /* Ajusta para asegurarte de que esté por encima de otros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para mejor visibilidad */
+    margin: 0; /* Asegura que no haya margen */
+    padding: 0; /* Asegura que no haya padding adicional */
+}
+/* Agrega un margen superior al contenido principal */
+main {
+    margin-top: 140px; /* Ajusta este valor según la altura real del header */
+}
+
+}
