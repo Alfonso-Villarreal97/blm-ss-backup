@@ -21,4 +21,5 @@ document.addEventListener('DOMContentLoaded', function() {
             link.classList.remove('nav-enlace--selectedLight'); // Elimina la clase 'nav-enlace--activo' de los demás enlaces
         }
     });
-});
+}); 
+
