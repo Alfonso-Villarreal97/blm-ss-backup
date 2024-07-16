@@ -20,6 +20,7 @@ body {
     justify-content: center; /* Centra horizontalmente el contenido */
     font-size: 25px; /* Tamaño de fuente */
     text-align: justify; /* Alinea el texto justificado */
+ 
   }
   
   h2 {
@@ -42,41 +43,24 @@ body {
     text-align: center;
     font-weight: bold;
   }
-  .ejercerderechos {
-    margin-left: 575px; /* Espacio a la izquierda para centrar */
-    margin-bottom: 30px; /* Espacio entre el botón y el final de la página */
-    align-self: flex-end; /* Alineación del botón en la parte inferior del contenedor */
-    background-color: #ba0e16;
-    color: white;
-    padding: 15px; /* Relleno */
-    border: none;
-    cursor: pointer; /* Esta propiedad cambia el cursor a mano */
 
+ 
+  .ejercerderechos {
+    display: block;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    background-color: #2a3952;
+    color: white;
+    border: none;
+    padding: 15px 0; /* Ajusta el relleno vertical y elimina el relleno horizontal */
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+    text-align: center; /* Asegura que el texto esté centrado */
+    border-radius: 8px;
+}
+@media (max-width: 797px) {
+  .titulo_aviso_privacidad{
+    text-align: center;
+    font-size: 20px;
   }
-  
-  /* Media Queries para Responsive Design */
-  
-  /* Para pantallas menores a 768px (tablets y smartphones) */
-  @media (max-width: 768px) {
-  
-    .titulo_aviso_privacidad {
-      font-size: 20px; /* Reduce el tamaño de fuente del título */
-    }
-  
-    h2 {
-      margin: 20px 10px; /* Ajusta márgenes para pantallas más pequeñas */
-    }
-  
-    p {
-      font-size: 16px; /* Reduce el tamaño de fuente para párrafos */
-      margin: 15px 10px; /* Ajusta márgenes para pantallas más pequeñas */
-    }
-  
-    .ejercerderechos {
-      margin-left: auto; /* Centra el botón horizontalmente */
-      margin-right: auto; /* Centra el botón horizontalmente */
-      width: 80%; /* Establece el ancho del botón al 80% */
-      margin-left: 50px;
-    }
-  }
-  
+}
