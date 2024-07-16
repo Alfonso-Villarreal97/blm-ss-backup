@@ -89,3 +89,16 @@ body{
 .piepagina .grupo1 .redes_footer a:hover {
     color: lightgray;  /* Cambio de color al pasar el ratón */
 }
+
+@media (max-width: 1199px) {
+    .piepagina .grupo1 {
+        grid-template-columns: 1fr;
+        gap: 2px; /* Ajuste del espacio entre los elementos en pantallas pequeñas */
+        
+    }
+
+    .piepagina .grupo1 .box {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
