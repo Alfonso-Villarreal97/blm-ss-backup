@@ -34,3 +34,28 @@
 .contenido-consultas .texto{
     font-size: 1.275rem;
 }
+
+@media (max-width: 1200px) {
+    
+
+    .contenido-pal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15rem 1rem;
+    }
+
+    .contenido-pal h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .titulo,
+    .texto {
+        width: 100%;
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+}
+

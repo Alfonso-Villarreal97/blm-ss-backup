@@ -15,7 +15,7 @@
     font-family: "League Spartan", sans-serif;
 }
 
-/*  Estilos para la parte de NAV, lista,links y items */
+/*  Estilos para la parte de NAV, lista, links y items */
 .header{
     display: flex;
     flex-direction: row;
@@ -264,3 +264,114 @@
         border: 3px solid white;
 }
 
+/* Estilos para el pie de página */
+.piepagina {
+    background-color: var(--selectedItemAnchor);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.piepagina .grupo1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 2rem;
+}
+
+.piepagina .grupo2 {
+    margin-top: 1rem;
+}
+
+.piepagina .box {
+    flex: 1;
+    padding: 1rem;
+}
+
+.piepagina .box h2 {
+    margin-bottom: 1rem;
+}
+
+.piepagina .box p {
+    text-align: left;
+}
+
+.piepagina .redes_footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.piepagina .redes_footer a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.piepagina .redes_footer a:hover {
+    color: var(--selectedItemInicio);
+}
+
+/* Colocacion del fondo de la página */
+.fondos {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.fondoinicio {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Media Queries para hacer el sitio responsive */
+@media (max-width: 1200px) {
+    
+    .principal {
+        left: 0;
+        width: 100vw;
+        height: auto;
+        border: none;
+    }
+
+    .texto_inicio {
+        margin: 2rem 0;
+        padding: 0 1rem;
+        width: 90%;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .botones_inicio {
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0;
+        width: 100%;
+    }
+
+    .botones_inicio a {
+        margin: 0.5rem 0;
+        width: 80%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .redes_inicio {
+        flex-direction: row;
+        bottom: -5rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .redes_inicio i {
+        margin: 0 0.5rem;
+    }
+
+
+}
