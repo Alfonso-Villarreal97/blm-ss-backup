@@ -58,9 +58,14 @@ body {
     text-align: center; /* Asegura que el texto esté centrado */
     border-radius: 8px;
 }
-@media (max-width: 797px) {
+@media (max-width: 1199px) {
   .titulo_aviso_privacidad{
     text-align: center;
     font-size: 20px;
   }
+  .final{
+    margin-left: 90px;
+    text-align: center;
+  }
+
 }
