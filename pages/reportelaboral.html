@@ -16,40 +16,67 @@
     <link rel="stylesheet" href="../css/estiloblmindex.css">
     <link rel="stylesheet" href="../css/estilosgeneral.css">
     <link rel="stylesheet" href="../css/estilosreporte.css">
+    <link rel="stylesheet" href="../css/estilonavegacion.css">
     <script src="../javascript/animacionSelectNav.js"></script>   
     
     <title>Reporte Laboral | BLM</title>
 </head>
 <body>
-  <!-- Header de la pagina principal -->
+<!-- El header es el menu y logo de la pagina -->
 <header class="header">
     <a href="../blmindex.html">
         <img class="logo_header" src="../img/LOGO CON FONDO.png" alt="Logo Buro Laboral">
     </a>
     
     <nav class="navegacion">
-        <ul>
+        <ul class="nav-links">
             <li>
-                <a href="../blmindex.html" class="nav-enlace--lightside">Inicio</a>
+                <a href="../blmindex.html" class="nav-enlace nav-enlace--lightside">Inicio</a>
             </li>
             <li>
-                <a href="quiensomos.html" class="nav-enlace--lightside">¿Quiénes somos?</a>
+                <a href="quiensomos.html" class="nav-enlace nav-enlace--lightside">¿Quiénes somos?</a>
             </li>
             <li>
-                <a href="servicios.html" class="nav-enlace--lightside">Servicios</a>
+                <a href="servicios.html" class="nav-enlace nav-enlace--lightside">Servicios</a>
             </li>
             <li>
-                <a href="blog.html" class="nav-enlace--lightside">Blog</a>
+                <a href="blog.html" class="nav-enlace nav-enlace--lightside">Blog</a>
             </li>
             <li>
-                <a href="contactanos.html" class="nav-enlace--lightside">Contáctanos</a>
+                <a href="contactanos.html" class="nav-enlace nav-enlace--lightside">Contáctanos</a>
             </li>
             <li>
-                <a href="https://whatsapp.com/channel/0029VaBD5iO8vd1LpGa7i83B" class="nav-enlace--activolight">Únete a nuestro canal</a>
-            </li>                
+                <a href="https://whatsapp.com/channel/0029VaBD5iO8vd1LpGa7i83B" class="nav-enlace nav-enlace--activolight">Únete a nuestro canal</a>
+            </li>
         </ul>
+
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+       
     </nav>
-</header> 
+</header>
+<div class="dropdown_menu">
+    <li>
+        <a href="../blmindex.html" class="nav-enlace nav-enlace--lightside">Inicio</a>
+    </li>
+    <li>
+        <a href="quiensomos.html" class="nav-enlace nav-enlace--lightside">¿Quiénes somos?</a>
+    </li>
+    <li>
+        <a href="servicios.html" class="nav-enlace nav-enlace--lightside">Servicios</a>
+    </li>
+    <li>
+        <a href="blog.html" class="nav-enlace nav-enlace--lightside">Blog</a>
+    </li>
+    <li>
+        <a href="contactanos.html" class="nav-enlace nav-enlace--lightside">Contáctanos</a>
+    </li>
+    <li>
+        <a href="https://whatsapp.com/channel/0029VaBD5iO8vd1LpGa7i83B" class="nav-enlace nav-enlace--activolight">Únete a nuestro canal</a>
+    </li>
+</div>
+<script src="../javascript/navresponsive.js"></script>
 
 <main class="contenidoReporte">
     <div class="textos">

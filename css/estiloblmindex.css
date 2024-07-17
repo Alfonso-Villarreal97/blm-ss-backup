@@ -329,7 +329,7 @@
 }
 
 /* Media Queries para hacer el sitio responsive */
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
     
     .principal {
         left: 0;
@@ -364,7 +364,7 @@
 
     .redes_inicio {
         flex-direction: row;
-        bottom: -5rem;
+        bottom: -4rem;
         left: 50%;
         transform: translateX(-50%);
     }
