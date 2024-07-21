@@ -8,9 +8,6 @@ body {
     overflow-y: scroll; /* Habilita el scroll vertical */
 }
 
-
-
-
 .fondoseguimiento video {
     position: absolute; /* Establece la posición del elemento de video de forma absoluta con respecto a su contenedor primario */
     top: 0; /* Coloca el video en la parte superior del contenedor primario */
@@ -41,90 +38,17 @@ p {
     font-size: 18px; /* Tamaño del texto de los párrafos */
     margin-top: 5px; /* Espacio en la parte superior de los párrafos */
 }
-@media (min-width: 1500px) {
-    h1,h2{
-        margin-top: 100px;
-      }
-    .header .logo_header {
-        max-width: 200px; /* Aumenta el tamaño máximo del logo */
-    }
-    main {
-        padding: 40px;
-    }
-    h1 {
-        font-size: 60px;
-    }
-    h2 {
-        font-size: 30px;
-    }
-    p {
-        font-size: 22px;
-    }
-}
-@media (min-width: 1400px) {
-    h1,h2{
-        margin-top: 100px;
-      }
-    .header .logo_header {
-        max-width: 200px; /* Aumenta el tamaño máximo del logo */
-    }
-    main {
-        padding: 40px;
-    }
-    h1 {
-        font-size: 60px;
-    }
-    h2 {
-        font-size: 30px;
-    }
-    p {
-        font-size: 22px;
-    }
-}
 
+@media (max-width: 1200px) {
 
-/* Estilos Responsivos */
-@media (max-width: 1300px) {
-    h1,h2{
-        margin-top: 50px;
-      }
     h1, h2, p {
-        margin-right: 500px;
+        text-align: justify;        
+        margin: 0 auto;
+        max-width: 800px; /* Ajusta este valor según sea necesario */
+        line-height: 2.5rem;
     }
-    h1 {
-        font-size: 40px;
-    }
-}
 
-
-@media (max-width: 768px) {
-  h1,h2{
-    margin-top: 50px;
-  }
-    h1, h2, p {
-       
-        margin-right: 50px;
-        text-align: left; /* Alinea el texto a la izquierda en pantallas pequeñas */
-        
-    }
-    h1 {
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 480px) {
-   
-    h1, h2, p {
-        margin-right: 20px;
-        text-align: left; /* Alinea el texto a la izquierda en pantallas pequeñas */
-    }
-    h1 {
-        font-size: 24px;
-    }
-    h2 {
-        font-size: 16px;
-    }
-    p {
-        font-size: 14px;
+    h1{
+        margin-top: 10rem;
     }
 }

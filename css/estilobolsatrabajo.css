@@ -165,9 +165,9 @@ body{
   
   
   /*hacerlo responsivo*/
-  @media (max-width:1055px){
+  @media (max-width:1200px){
     .central{
-      height:calc(100vh - 145px) ;
+      margin-top: 10rem;
       padding-top: 0px;
     }
     .circle p{
@@ -183,6 +183,22 @@ body{
       width: 700px;
       height: 700px;
     }
+
+    .circle .texto-circle {
+      color: white;
+      font-size: 1rem;
+      text-align: center;
+      margin: 0;
+      animation: rotacionletras 30s linear infinite; /* Usar el nombre correcto del keyframe */
+    }
+
+    body {
+      background-image: url('../img/Bolsa_trabajo.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: scroll; /* Esta es la configuración predeterminada que permite el scroll del fondo */
+  }
+  
   }
   
 

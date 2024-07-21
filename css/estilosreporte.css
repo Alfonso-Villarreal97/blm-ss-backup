@@ -64,3 +64,42 @@
     background-color: #fff;
     transition: 0.2s ease-out;
 }
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 1200px) {
+ .contenidoReporte{
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    margin-top: 50px; /* Espacio adicional desde el navbar */
+    margin-left: 1rem;
+ }
+}
+
+@media (max-width: 1100px) {
+    .contenidoReporte {
+        display: flex;
+        flex-direction: column; /* Alinea los elementos en columna */
+        justify-content: center; /* Centra el contenido horizontalmente */
+        align-items: center; /* Centra el contenido verticalmente */
+        margin-top: 50px; /* Espacio adicional desde el navbar */
+    }
+
+    .textos {
+        width: 90vw; 
+        margin: 0; 
+    }
+
+    .titulo {
+        font-size: 3rem; /* Tamaño del texto del h1 */
+        margin-bottom: 20px; /* Espacio debajo del título */
+    }
+
+    .parrafo1 {
+        font-size: 1.5rem; /* Tamaño del texto del párrafo */
+        margin-bottom: 20px; /* Espacio debajo del párrafo */
+        width: 100%; /* Asegura que el párrafo use el ancho completo del contenedor */
+    }
+}
+

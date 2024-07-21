@@ -136,3 +136,33 @@ body{
     display: inline-block;
     vertical-align: middle;
 }
+
+@media (max-width: 1200px) {
+    .slider {
+        display: block; /* Cambia la disposición del slider para mostrar en columna */
+        width: auto; /* Ajusta el ancho para que se ajuste al contenido */
+        height: auto; /* Ajusta la altura para que se ajuste al contenido */
+        overflow: visible; /* Asegura que no haya overflow */
+        position: relative; /* Ajusta la posición para evitar problemas de superposición */
+    }
+
+    .slider .item {
+        display: block; /* Muestra cada ítem en bloque */
+        margin: 2rem 0rem; /* Quita el margen para que los ítems se muestren en una sola columna */
+        transform: none; /* Quita la transformación para que no haya animación */
+        opacity: 1; /* Asegura que los ítems sean completamente visibles */
+        position: relative; /* Cambia la posición para que no se sobrepongan */
+        filter: none; /* Quita el desenfoque */
+        transition: none; /* Desactiva la transición */
+    }
+
+    .slider .item.blur {
+        filter: none; /* Asegura que el desenfoque no se aplique */
+    }
+
+    .controls{
+        display: none;
+    }
+}
+
+
