@@ -122,3 +122,42 @@ html {
     cursor: pointer;
 }
 
+@media (max-width: 1200px) {
+    .contenido {
+        height: auto;
+    }
+
+    .slider {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .item {
+        position: static;
+        width: 50%;
+        margin: 1rem 0;
+        right: 0;
+        transform: none !important;
+        filter: none !important;
+        opacity: 1 !important;
+    }
+
+    .icon-go {
+    position: relative !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    color: #595B62;
+}
+
+    .controls {
+        display: none;
+    }
+}
+
+
