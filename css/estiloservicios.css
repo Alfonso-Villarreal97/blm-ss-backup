@@ -31,6 +31,7 @@ html {
     object-fit: cover;
 }
 
+
 /*Estilo para título*/
 .contenedor h2{
     font-size: 4rem;
@@ -61,7 +62,7 @@ html {
 .item{
     position: absolute;
     width: 14.375rem;
-    height: 5.625rem;
+    height: 7.2rem;
     background-color: #DFDFDF;
     border-radius: 0.625rem;
     padding: 1.25rem;
@@ -147,17 +148,24 @@ html {
     }
 
     .icon-go {
-    position: relative !important;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    font-size: 1.5rem;
-    color: #595B62;
-}
+        position: relative !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        font-size: 1.5rem;
+        color: #595B62;
+    }
 
     .controls {
         display: none;
     }
+
+    .fondo-servicios {
+        display: none;
+    }
+
+
 }
+
 
 

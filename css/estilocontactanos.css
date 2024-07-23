@@ -1,3 +1,13 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll; /* Habilita el scroll vertical */
+  background-image: url('../img/fondocontactanos.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll !important; /* Cambia la posición de la imagen al desplazarse */
+}
 #truco{
   opacity: 0;
 }
@@ -42,55 +52,8 @@
     font-size: 25px;
     margin-left: 55px;
   }
-  
-  /*  Estilo para Redes sociales */
-  .redes_sociales {
-    display: flex;
-    margin-top: 20px;
-    margin-left: 55px;
-  }
-  
-  .redes_sociales .enlace {
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 20px;
-  }
-  
-  /* Estilos para pantallas pequeñas (menor a 768px) */
-  @media (max-width: 768px) {
-    .titulo_contactanos {
-      font-size: 28px;
-      margin-left: 20px;
-    }
-  
-    .icono_telefono_contactanos {
-      font-size: 28px;
-      margin-right: 30px;
-      margin-top: -50px;
-    }
-  
-    .texto_principal {
-      font-size: 18px;
-      margin-top: -10px;
-      margin-left: 20px;
-    }
-  
-    .texto_secundario {
-      font-size: 22px;
-      margin-left: 20px;
-    }
-  
-    .redes_sociales {
-      flex-direction: column;
-    }
-  
-    .redes_sociales .enlace {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-  }
-  
 
+  
 /* Estilos generales para la sección de redes sociales */
 .redes_contactanos {
     display: flex;
@@ -100,6 +63,7 @@
     bottom: 175px;
     right: 600px;
     padding: 0px;
+   
   }
   
   .redes_contactanos i {
@@ -118,25 +82,6 @@
   .icono i {
     font-size: 24px;
     color: #2a3952;
-  }
-  
-  /* Diseño responsivo para pantallas pequeñas (menor a 768px) */
-  @media (max-width: 768px) {
-    .redes_contactanos {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
-      bottom: 20px;
-      right: 20px;
-    }
-  
-    .redes_contactanos i {
-      width: 50px;
-      height: 50px;
-      margin-right: 5px;
-      margin-bottom: 10px; /* Aumentado a 10px para bajar los íconos */
-      font-size: 20px;
-    }
   }
   
     
@@ -187,34 +132,100 @@
     cursor: pointer; /* Esta propiedad cambia el cursor a mano */
   }
   
-  /* Estilos para pantallas pequeñas (menor a 768px) */
-  @media (max-width: 1199px) {
-    .tabla_contacto {
-      width: 95%; /* Ajustar el ancho de la tabla en pantallas pequeñas */
-      margin: 10px auto; /* Ajustar el margen en pantallas pequeñas */
-    }
-    .icono_telefono_contactanos{
-      margin-left: 20px; /* Asegúrate de que no haya margen a la izquierda */
-    float: left; /* Hace que el elemento se alinee a la izquierda */
-    }
-p{
-  margin-left: 0; /* Asegúrate de que no haya margen a la izquierda */
-    float: left; /* Hace que el elemento se alinee a la izquierda */
-}
 
+ /* Responsive styles for screens smaller than 1200px */
+@media (max-width: 1199px) {
+  .icono_telefono_contactanos {
+      position: relative;
+      top: 50px;
+      margin-left: 60px;
+      float: left;
   }
+
+  .texto_principal {
+      margin-top: 50px;
+      margin-left: 60px;
+      float: left;
+  }
+
+  .texto_secundario {
+      margin-top: 5px;
+      margin-left: 60px;
+      float: left;
+  }
+
+  .redes_contactanos {
+      flex-direction: row;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 100px;
+      position: relative;
+      top: 150px;
+      right: 570px;
+  }
+
+  .tabla_contacto {
+      position: relative;
+      top: 50px;
+      width: 95%; /* Adjust width */
+      margin: 10px auto; /* Adjust margin */
+  }
+}
+
+@media (max-width: 957px) {
+
+  .redes_contactanos {
+    flex-direction: row;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 80px;
+    left: -200px;
+}
+}
+
+/* Estilos para pantallas menores o iguales a 650px */
+@media (max-width: 650px) {
+
+  .redes_contactanos {
+      flex-direction: row; /* Mantiene los iconos en una fila */
+      justify-content: center; /* Centra los iconos horizontalmente */
+      align-items: center; /* Centra los iconos verticalmente */
+      flex-wrap: wrap; /* Permite que los iconos se envuelvan si no hay suficiente espacio */
+      width: 100%; /* Ajusta el ancho al 100% del contenedor */
+      height: auto; /* Ajusta la altura automáticamente */
+      position: relative;
+      top: 20px; /* Ajusta la posición vertical si es necesario */
+      left: 200px; /* Ajusta la posición horizontal si es necesario */
+  }
+
+  .redes_contactanos a {
+      display: inline-flex; /* Asegura que los enlaces se comporten correctamente en línea */
+      margin: 5px; /* Añade margen entre los iconos */
+      text-decoration: none; /* Elimina el subrayado del enlace */
+  }
+
+  .redes_contactanos i {
+      width: 10vw; /* Ajusta el tamaño relativo al viewport */
+      height: 10vw; /* Ajusta el tamaño relativo al viewport */
+      max-width: 50px; /* Tamaño máximo del icono */
+      max-height: 50px; /* Tamaño máximo del icono */
+      font-size: 25px; /* Ajusta el tamaño de fuente */
+      color: #2a3952; /* Color de los iconos */
+  }
+}
+
+
+@media (max-width: 380px) {
+  .telefono {
+    white-space: nowrap; /* Mantiene el texto en una sola línea */
+}
+
+}
+  
   
   
   
   
 
-body{
-    margin: 0;
-    padding: 0;
-    overflow-y: scroll; /* Habilita el scroll vertical */
-    background-image: url('../img/fondocontactanos.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: scroll !important; /* Cambia la posición de la imagen al desplazarse */
-}

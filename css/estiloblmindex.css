@@ -33,9 +33,20 @@
 
 .header .navegacion{
     padding: 0.5rem 0rem;      
+    
+}
+.header .navegacion_blm{
+    padding: 0.5rem 0rem;      
+    
 }
 
  .navegacion ul li{
+    margin-left: 0.188rem; 
+    display: inline-block;
+    text-wrap: nowrap;
+    list-style: none; 
+}
+.navegacion_blm ul li{
     margin-left: 0.188rem; 
     display: inline-block;
     text-wrap: nowrap;
@@ -131,6 +142,9 @@
     padding: 0.625rem 1.25rem;
     border-radius: 0.938rem;
     color: var(--selectedItemAnchor);
+}
+.navegacion_blm a{
+color: white;
 }
 /* Estilo para la p, texto, del inicio */
 
@@ -367,6 +381,7 @@
         bottom: -4rem;
         left: 50%;
         transform: translateX(-50%);
+        display: none;
     }
 
     .redes_inicio i {
