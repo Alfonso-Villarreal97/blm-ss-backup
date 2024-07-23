@@ -83,7 +83,7 @@ body{
     display: flex;
     flex-direction: column;
     margin: 10rem 0rem;
-    background: rgba(255, 255, 255, 1);
+    background: rgb(196, 193, 193);
     border-radius: 1.563rem;
     text-align: justify;
     position: absolute;
@@ -161,6 +161,9 @@ body{
     }
 
     .controls{
+        display: none;
+    }
+    .fondo-quienes-somos{
         display: none;
     }
 }
