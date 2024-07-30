@@ -10,6 +10,14 @@
 }
 body{
     overflow-y: scroll !important; /* Habilita el scroll vertical */ 
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll; /* Habilita el scroll vertical */
+    background-image: url('../img/BuscarEmpleoFondo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: local !important;
 }
 
 body,

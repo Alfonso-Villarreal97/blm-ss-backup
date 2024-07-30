@@ -3,6 +3,7 @@ function createCirclesAroundCenter(numCircles) {
     const container = document.getElementById('container');
     const radius = 100; // Radio de la rueda
     const angleStep = (2 * Math.PI) / numCircles; // Paso angular entre cada círculo
+
   
     for (let i = 0; i < numCircles; i++) {
       const circle = document.createElement('div');

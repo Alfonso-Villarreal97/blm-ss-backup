@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const startAutoSlide = () => {
         intervalId = setInterval(() => {
             navigate('down');
-        }, 3000); // Intervalo de 3 segundos
+        }, 14000); // Intervalo de 3 segundos
     };
 
     const stopAutoSlide = () => {
@@ -40,14 +40,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const iconUp = document.querySelector('.icon-up');
     const iconDown = document.querySelector('.icon-down');
+    const slider = document.querySelector('.slider');
 
     const handleResize = () => {
         if (window.innerWidth <= 100) {
             stopAutoSlide(); // Detiene la animación en pantallas menores a 100px
-            document.querySelector('.slider').style.transition = 'none'; // Desactiva la transición
+            slider.style.transition = 'none'; // Desactiva la transición
         } else {
             startAutoSlide(); // Reanuda la animación en pantallas mayores a 100px
-            document.querySelector('.slider').style.transition = ''; // Restaura la transición
+            slider.style.transition = ''; // Restaura la transición
         }
     };
 
@@ -67,12 +68,12 @@ document.addEventListener('DOMContentLoaded', function() {
     startAutoSlide();
 
     // Detener el avance automático al pasar el ratón sobre el slider
-    document.querySelector('.slider').addEventListener('mouseenter', () => {
+    slider.addEventListener('mouseenter', () => {
         stopAutoSlide();
     });
 
     // Reanudar el avance automático al quitar el ratón del slider
-    document.querySelector('.slider').addEventListener('mouseleave', () => {
+    slider.addEventListener('mouseleave', () => {
         startAutoSlide();
     });
 

@@ -11,6 +11,14 @@ html {
 
 body{
     overflow-y: scroll !important; /* Habilita el scroll vertical */ 
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll; /* Habilita el scroll vertical */
+    background-image: url('../img/BuscarEmpleoFondo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: local !important;
 }
 
 .contenedor2{
@@ -77,6 +85,7 @@ body{
     height: 38rem;
     margin: 1rem 4rem;
     overflow: hidden;    
+   
 }
 
 .item {
@@ -136,6 +145,7 @@ body{
     display: inline-block;
     vertical-align: middle;
 }
+
 
 @media (max-width: 1200px) {
     .slider {
