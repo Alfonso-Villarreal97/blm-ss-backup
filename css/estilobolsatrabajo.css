@@ -4,10 +4,48 @@
 
 body{
   background-image:url('../img/fondoBolsaDeTr.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: local;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll; /* Habilita el scroll vertical */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: local !important;
 }
+.contenido-bolsadetrabajo_resp{
+  display: none;
+  
+}
+.Titulos_bolsatr{
+  display: none;
+  font-size: 25px;
+  color: #2a3952;
+  text-align: left;
+  margin-left: 55px;
+  font-weight: bold;
+  margin-top: 120px;
+}
+.sub_bolsatr{
+  display: none;
+  display: none;
+  font-size: 25px;
+  color: #2a3952;
+  text-align: left;
+  margin-left: 55px;
+  font-weight: bold;
+  
+}
+.text_bolsatr{
+  display: none;
+  display: none;
+  font-size: 25px;
+  color: #2a3952;
+  text-align: left;
+  margin-left: 55px;
+  font-weight: bold;
+
+}
+
 
 .contenido-bolsadetrabajo{
   display: flex;
@@ -166,38 +204,84 @@ body{
   
   /*hacerlo responsivo*/
   @media (max-width:1200px){
-    .central{
-      margin-top: 10rem;
-      padding-top: 0px;
+
+    .contenido-bolsadetrabajo_resp{
+      display: block;
     }
-    .circle p{
-      font-size: 15px;
-    }
-  
-    .circle{
-      width: 100px;
-      height: 100px;
-    }
-  
-    .container{
-      width: 700px;
-      height: 700px;
+    .contenido-bolsadetrabajo{
+      display: none;
     }
 
-    .circle .texto-circle {
-      color: white;
-      font-size: 1rem;
-      text-align: center;
-      margin: 0;
-      animation: rotacionletras 30s linear infinite; /* Usar el nombre correcto del keyframe */
+    body{
+      background-image:url('../img/bolsatrabajoresponsive.png');
+        margin: 0;
+        padding: 0;
+        overflow-y: scroll; /* Habilita el scroll vertical */
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: local !important;
     }
+    .Titulos_bolsatr{
+      display: block;
 
-    body {
-      background-image: url('../img/Bolsa_trabajo.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: scroll; /* Esta es la configuración predeterminada que permite el scroll del fondo */
-  }
+    }
+    .sub_bolsatr{
+      display: block;
+    }
+    .text_bolsatr{
+      display: block;
+    }
+    
+    /* Estilos básicos */
+.contenido-bolsadetrabajo_resp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.central_rep {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container_rep {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.circle_rep {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color:#576377;
+  text-align: center;
+}
+
+.circle-numero_rep {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  color: rgb(42, 57, 82);
+}
+
+.texto-circle_rep {
+  font-size: 16px;
+  margin: 10px 0 0;
+  color: white;
+}
+
   
   }
   
