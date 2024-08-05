@@ -146,7 +146,6 @@ body{
     vertical-align: middle;
 }
 
-
 @media (max-width: 1200px) {
     .slider {
         display: block; /* Cambia la disposición del slider para mostrar en columna */
