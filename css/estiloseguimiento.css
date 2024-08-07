@@ -8,6 +8,7 @@ body {
     overflow-y: scroll; /* Habilita el scroll vertical */
 }
 
+
 .fondoseguimiento video {
     position: absolute; /* Establece la posición del elemento de video de forma absoluta con respecto a su contenedor primario */
     top: 0; /* Coloca el video en la parte superior del contenedor primario */
@@ -56,4 +57,22 @@ p {
     }
 
    
+}
+ /* Media query para pantallas mayores a 1201 píxeles */
+ @media (min-width: 1201px) {
+    .bloque{
+        position: fixed;
+        top: 250px; /* Margen superior */
+        right: 0px;
+        bottom: 600px; /* Margen inferior */
+    }
+}
+ /* Media query para pantallas mayores a 1201 píxeles */
+ @media (min-width: 1548px) {
+    .bloque{
+        position: fixed;
+        top: 250px; /* Margen superior */
+        right: 0px;
+        bottom: 600px; /* Margen inferior */
+    }
 }

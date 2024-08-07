@@ -163,6 +163,8 @@ body{
         position: relative; /* Cambia la posición para que no se sobrepongan */
         filter: none; /* Quita el desenfoque */
         transition: none; /* Desactiva la transición */
+        font-size: 25px;
+        text-align: center;
     }
 
     .slider .item.blur {

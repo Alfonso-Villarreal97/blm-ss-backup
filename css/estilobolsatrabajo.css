@@ -2,6 +2,7 @@
     font-family: "League Spartan", sans-serif;
 }
 
+
 body{
   background-image:url('../img/fondoBolsaDeTr.png');
     margin: 0;
@@ -234,20 +235,24 @@ body{
     .Titulos_bolsatr{
       display: block;
       text-align: left;
+      margin-left: 35px;
 
     }
     .sub_bolsatr_1{
       display: block;
       text-align: left;
+      margin-left: 35px;
     }
 
     .sub_bolsatr{
       display: block;
       text-align: left;
+      margin-left: 35px;
     }
     .text_bolsatr{
       display: block;
       text-align: left;
+      margin-left: 35px;
     }
     
     /* Estilos básicos */
@@ -290,7 +295,7 @@ body{
   font-size: 24px;
   font-weight: bold;
   margin: 0;
-  color: rgb(42, 57, 82);
+  color:white;
 }
 
 .texto-circle_rep {
