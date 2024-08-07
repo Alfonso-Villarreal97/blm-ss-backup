@@ -3,7 +3,7 @@ let next = document.getElementById('next');
 let prev = document.getElementById('prev');
 let intervalId;
 
-let active = -1;
+let active = 0;
 
 function loadShow(){
     if (window.innerWidth > 768) {
@@ -52,7 +52,7 @@ function prevSlide() {
 
 function startAutoSlide() {
     if (window.innerWidth > 768) {
-        intervalId = setInterval(nextSlide, 1500); // Avanza automáticamente cada 1.5 segundos
+        intervalId = setInterval(nextSlide, 1000); // Avanza automáticamente cada 1.5 segundos
     }
 }
 

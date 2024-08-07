@@ -46,6 +46,7 @@ html {
     color: var(--blueText);
     position: relative;
     left: 1.875rem;
+    top: -15px;
 }
 
 /*Estilos Carousel*/
@@ -115,7 +116,7 @@ html {
     justify-content: space-evenly;
     margin-top: 2rem;
     gap: 450px;
-    margin-left: 700px;
+    margin-left: 500px;
 }
 
 #next, #prev{
