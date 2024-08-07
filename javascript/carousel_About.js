@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const startAutoSlide = () => {
         intervalId = setInterval(() => {
             navigate('down');
-        }, 12000); // Intervalo de 3 segundos
+        }, 3000); // Intervalo de 3 segundos
     };
 
     const stopAutoSlide = () => {
@@ -41,27 +41,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const iconUp = document.querySelector('.icon-up');
     const iconDown = document.querySelector('.icon-down');
 
-    const handleResize = () => {
-        if (window.innerWidth <= 100) {
-            stopAutoSlide(); // Detiene la animación en pantallas menores a 100px
-            document.querySelector('.slider').style.transition = 'none'; // Desactiva la transición
-        } else {
-            startAutoSlide(); // Reanuda la animación en pantallas mayores a 100px
-            document.querySelector('.slider').style.transition = ''; // Restaura la transición
-        }
-    };
-
     iconUp.addEventListener('click', () => {
         navigate('up');
-        stopAutoSlide(); // Detener el avance automático al hacer clic manualmente        
+        stopAutoSlide();
+        startAutoSlide(); // Reanudar el avance automático después de hacer clic manualmente
     });
 
     iconDown.addEventListener('click', () => {
         navigate('down');
-        stopAutoSlide(); // Detener el avance automático al hacer clic manualmente        
+        stopAutoSlide();
+        startAutoSlide(); // Reanudar el avance automático después de hacer clic manualmente
     });
-
-    window.addEventListener('resize', handleResize); // Ajusta el comportamiento en función del tamaño de la ventana
 
     // Iniciar el avance automático al cargar la página
     startAutoSlide();
@@ -78,7 +68,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Mostrar el primer ítem al cargar la página
     showItem(0);
-
-    // Llama a handleResize para asegurar que el slider está en el estado correcto al cargar la página
-    handleResize();
 });
