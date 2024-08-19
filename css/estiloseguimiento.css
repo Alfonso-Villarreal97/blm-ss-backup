@@ -76,3 +76,28 @@ p {
         bottom: 600px; /* Margen inferior */
     }
 }
+
+@media only screen and (min-width: 2628px) {
+    .bloque{
+        position:absolute;
+        right: 200px;
+    }
+  
+   .navegacion{
+    position:absolute;
+    right: 215px;
+    top: 8px;
+}
+}
+
+@media only screen and (min-width: 1608px) {
+    .bloque{
+        position:absolute;
+        right: 200px;
+    }
+    .navegacion{
+        position:absolute;
+        right: 215px;
+        top: 8px;}
+   
+}

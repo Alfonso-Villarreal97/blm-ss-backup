@@ -59,3 +59,20 @@
 
 }
 
+@media only screen and (min-width: 2220px) {
+    .contenido-pal{
+        position:absolute;
+        left: 40px;
+    }
+}
+@media only screen and (min-width: 2412px) {
+    .contenido-pal{
+        position:absolute;
+        left: 80px;
+    }
+    .navegacion{
+        position:absolute;
+        right: 215px;
+        top: 8px;
+    }
+}
