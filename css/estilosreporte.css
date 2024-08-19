@@ -103,3 +103,29 @@
     }
 }
 
+@media only screen and (min-width: 2260px) {
+    .navegacion{
+        position: absolute;
+        right: 50px;
+        top: 10px;
+    }
+    .textos{
+        position: absolute;
+        right: 50px;
+    }
+}
+
+@media only screen and (min-width: 2282px) {
+    .navegacion{
+        position: absolute;
+        right: 180px;
+        top: 50px;
+    }
+}
+@media only screen and (min-width: 2374px) {
+    .navegacion{
+        position: absolute;
+        right: 200px;
+        top: 8px;
+    }
+}
