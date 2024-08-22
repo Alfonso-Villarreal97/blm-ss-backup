@@ -153,6 +153,7 @@ body{
         height: auto; /* Ajusta la altura para que se ajuste al contenido */
         overflow: visible; /* Asegura que no haya overflow */
         position: relative; /* Ajusta la posición para evitar problemas de superposición */
+        margin-left: 50px;
     }
 
     .slider .item {
